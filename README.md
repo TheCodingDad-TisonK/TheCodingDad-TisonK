@@ -46,7 +46,7 @@ Designing realistic gameplay systems and practical utility mods for FS22 & FS25.
 ## 🛠 What I Build
 
 ### 🚜 Farming Simulator Mods
-- Mostly scripts based on realism and economy systems
+- Scripts based on realism and simple systems
 - Gameplay balanced and realism based mods
 - Tools and utility mods
 
