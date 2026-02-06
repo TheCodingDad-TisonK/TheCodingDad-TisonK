@@ -1,4 +1,4 @@
-# 👋 Hi, I’m **TheCodingDad-TisonK**
+# 👋 Hi, I’m Tison aka **TheCodingDad-TisonK**
 
 Welcome to my GitHub!  
 I’m a hobbyist developer who loves **coding mods and tools for simulation games**, especially **Farming Simulator 22 & 25**. I enjoy exploring scripting and game mechanics through fun, practical projects.
