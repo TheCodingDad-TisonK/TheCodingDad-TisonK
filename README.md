@@ -40,12 +40,6 @@ You’ll mostly find projects related to **Farming Simulator modding** and **Lua
 
 My goal is to improve realism, usability, and depth while keeping performance and clean code in mind.
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Lua-Scripting-blue?style=flat-square&logo=lua">
-  <img src="https://img.shields.io/badge/Game-Modding-green?style=flat-square">
-  <img src="https://img.shields.io/badge/Farming%20Simulator-FS22%20%7C%20FS25-8bc34a?style=flat-square">
-</p>
-
 ---
 
 ## 🚀 Featured Projects
