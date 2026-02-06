@@ -25,12 +25,6 @@
 
 <br>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Lua-Scripting-blue?style=flat-square&logo=lua">
-  <img src="https://img.shields.io/badge/Game-Modding-green?style=flat-square">
-  <img src="https://img.shields.io/badge/Farming%20Simulator-FS22%20%7C%20FS25-8bc34a?style=flat-square">
-</p>
-
 ---
 
 ## 🚜 About Me
