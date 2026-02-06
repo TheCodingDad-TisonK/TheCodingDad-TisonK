@@ -48,7 +48,7 @@ Designing realistic gameplay systems and practical utility mods for FS22 & FS25.
 ### 🚜 Farming Simulator Mods
 - Scripts based on realism and simple systems
 - Gameplay balanced and realism based mods
-- Tools and utility mods
+- Tools and utility mods that are usefull
 
 ### 📦 Lua Scripts
 - Lightweight, efficient scripting
