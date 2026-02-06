@@ -13,6 +13,9 @@
     <img src="https://img.shields.io/badge/ModHub-Farming%20Simulator-blue?style=for-the-badge">
   </a>
 </p>
+
+---
+
 # 👋 Hi, I’m Tison aka **TheCodingDad-TisonK**
 
 Welcome to my GitHub!  
