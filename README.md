@@ -1,4 +1,3 @@
-
 <p align="center">
   <a href="https://github.com/TheCodingDad-TisonK">
     <img src="https://img.shields.io/badge/GitHub-Profile-181717?style=for-the-badge&logo=github">
@@ -16,7 +15,7 @@
 
 ---
 
-# 👋 Hi, I’m Tison aka **TheCodingDad-TisonK**
+Hi 👋, I’m Tison aka **TheCodingDad-TisonK**
 
 Welcome to my GitHub!  
 I’m a hobbyist developer who loves **coding mods and tools for simulation games**, especially **Farming Simulator 22 & 25**. I enjoy exploring scripting and game mechanics through fun, practical projects.
