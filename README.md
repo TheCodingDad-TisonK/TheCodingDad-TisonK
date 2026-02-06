@@ -1,9 +1,3 @@
-# 👋 Hi, I’m Tison aka **TheCodingDad-TisonK**
-
-Welcome to my GitHub!  
-I’m a hobbyist developer who loves **coding mods and tools for simulation games**, especially **Farming Simulator 22 & 25**. I enjoy exploring scripting and game mechanics through fun, practical projects.
-
-📌 **Current focus:** realistic gameplay improvements and utility enhancements for FS22 & FS25 modding.
 
 <p align="center">
   <a href="https://github.com/TheCodingDad-TisonK">
@@ -19,6 +13,12 @@ I’m a hobbyist developer who loves **coding mods and tools for simulation game
     <img src="https://img.shields.io/badge/ModHub-Farming%20Simulator-blue?style=for-the-badge">
   </a>
 </p>
+# 👋 Hi, I’m Tison aka **TheCodingDad-TisonK**
+
+Welcome to my GitHub!  
+I’m a hobbyist developer who loves **coding mods and tools for simulation games**, especially **Farming Simulator 22 & 25**. I enjoy exploring scripting and game mechanics through fun, practical projects.
+
+📌 **Current focus:** realistic gameplay improvements and utility enhancements for FS22 & FS25 modding.
 
 ---
 
@@ -54,7 +54,6 @@ My goal is to improve realism, usability, and depth while keeping performance an
 | **FS22_WorkerCosts** | Configurable worker costs and skill-based wage systems |
 | **FS22_AdvancedFarmLogistics** | Advanced logistics and management systems for farms |
 | **FS22_FarmTablet** | Tablet-style UI interface with useful in-game farm data |
-| **More projects…** | Explore all repositories for additional mods and scripts |
 
 👉 **All repositories:**  
 https://github.com/TheCodingDad-TisonK?tab=repositories
