@@ -15,8 +15,7 @@
 
 <br>
 
-<h1 align="center">👋 Hi, I’m Tison</h1>
-<h3 align="center">aka <strong>TheCodingDad-TisonK</strong></h3>
+<h3 align="center">👋 Hi, I’m Tison aka <strong>TheCodingDad-TisonK</strong></h3>
 
 <p align="center">
   🚜 Farming Simulator Modder • 🧑‍💻 Lua Scripter • 👨‍👧‍👦 Coding Dad  
