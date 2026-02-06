@@ -38,7 +38,7 @@
 
 Welcome to my GitHub!
 
-I’m a **hobbyist developer and Farming Simulator modder** who loves building systems that add **depth, realism, and quality-of-life improvements** to simulation games — especially **Farming Simulator 22 & 25**.
+I’m a **hobbyist developer and Farming Simulator modder** who loves building systems that add **depth, realism, and quality-of-life improvements** to simulation games, especially **Farming Simulator 22 & 25**.
 
 What drives my projects:
 - Improving gameplay realism without overcomplicating things
@@ -68,7 +68,7 @@ Designing realistic gameplay systems and practical utility mods for FS22 & FS25.
 - Game-related tools
 
 **My philosophy:**  
-> Add immersion and realism — without hurting performance or stability.
+> Add immersion and realism, without hurting performance or stability.
 
 ---
 
