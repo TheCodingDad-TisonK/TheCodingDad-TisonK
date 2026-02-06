@@ -13,95 +13,109 @@
   </a>
 </p>
 
----
+<br>
 
-<h1 align="center">Hi 👋, I’m Tison</h1>
+<h1 align="center">👋 Hi, I’m Tison</h1>
 <h3 align="center">aka <strong>TheCodingDad-TisonK</strong></h3>
 
 <p align="center">
-  Hobbyist developer & Farming Simulator modder<br>
-  <strong>FS22 • FS25 • Lua scripting</strong>
+  🚜 Farming Simulator Modder • 🧑‍💻 Lua Scripter • 👨‍👧‍👦 Coding Dad  
+  <br>
+  <strong>FS22 • FS25 • Gameplay Systems & Realism</strong>
+</p>
+
+<br>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Lua-Scripting-blue?style=flat-square&logo=lua">
+  <img src="https://img.shields.io/badge/Game-Modding-green?style=flat-square">
+  <img src="https://img.shields.io/badge/Farming%20Simulator-FS22%20%7C%20FS25-8bc34a?style=flat-square">
 </p>
 
 ---
 
 ## 🚜 About Me
 
-Welcome to my GitHub!  
-I’m a hobbyist developer who loves **building mods and tools for simulation games**, with a strong focus on **Farming Simulator 22 & 25**.
+Welcome to my GitHub!
 
-I enjoy digging into:
-- Game mechanics
-- Realism improvements
-- Clean, maintainable Lua code
+I’m a **hobbyist developer and Farming Simulator modder** who loves building systems that add **depth, realism, and quality-of-life improvements** to simulation games — especially **Farming Simulator 22 & 25**.
 
-📌 **Current focus:**  
-Realistic gameplay systems and practical utility enhancements for FS22 & FS25 modding.
+What drives my projects:
+- Improving gameplay realism without overcomplicating things
+- Clean, readable, and maintainable Lua code
+- Mods that *feel like they belong in the base game*
+
+📌 **Current focus**  
+Designing realistic gameplay systems and practical utility mods for FS22 & FS25.
 
 ---
 
 ## 🛠 What I Build
 
-Most of my repositories fall into these areas:
-
-### 🚜 Farming Simulator Mods (FS22 & FS25)
-- Realistic gameplay mechanics (soil, fertilizer, economy systems)
-- Quality-of-life and balance improvements
-- UI helpers and in-game tools
+### 🚜 Farming Simulator Mods
+- Soil, fertilizer, and economy systems
+- Gameplay balance and realism tweaks
+- In-game UI helpers and tools
 
 ### 📦 Lua Scripts
-- Lightweight, efficient scripts
-- Gameplay automation and enhancements
-- Clean and modular code design
+- Lightweight, efficient scripting
+- Automation and gameplay enhancements
+- Modular, maintainable code structures
 
-### 🎮 Experimental & Utility Projects
-- Game-related tools
+### 🧪 Experimental & Utility Projects
 - Concept systems and mechanics
-- Learning projects and prototypes
+- Prototypes and learning projects
+- Game-related tools
 
-My goal is always the same:  
-**add depth and realism without sacrificing performance or stability**.
+**My philosophy:**  
+> Add immersion and realism — without hurting performance or stability.
 
 ---
 
 ## 🚀 Featured Projects
 
-| Project | Description |
-|-------|-------------|
-| **FS25_SoilFertilizer** | Realistic soil fertility mechanics and nutrient cycles for FS25 |
-| **FS22_WorkerCosts** | Configurable worker costs with skill-based wage systems |
-| **FS22_AdvancedFarmLogistics** | Advanced logistics and farm management systems |
-| **FS22_FarmTablet** | Tablet-style in-game UI with useful farm information |
+<p align="center">
+  <b>Some highlights from my repositories</b>
+</p>
 
-👉 **Browse all repositories:**  
-https://github.com/TheCodingDad-TisonK?tab=repositories
+| Project | Focus |
+|-------|-------|
+| **FS25_SoilFertilizer** | Realistic soil fertility mechanics and nutrient cycles |
+| **FS22_WorkerCosts** | Skill-based worker wages and configurable costs |
+| **FS22_AdvancedFarmLogistics** | Advanced logistics and farm management systems |
+| **FS22_FarmTablet** | Tablet-style in-game UI with essential farm data |
+
+👉 **Explore everything here:**  
+🔗 https://github.com/TheCodingDad-TisonK?tab=repositories
 
 ---
 
-## 🧠 What I’m Learning & Improving
+## 🧠 Currently Learning & Improving
 
 - 🧑‍💻 Lua scripting & performance optimization  
 - 🎮 Farming Simulator modding workflows  
-- 🛠 Gameplay system & balance design  
-- 📈 Writing clean, maintainable, readable code  
+- 🛠 Gameplay system design & balancing  
+- 📈 Writing clean, readable, future-proof code  
 
 ---
 
-## 📊 GitHub Stats
+## 📊 GitHub Activity
 
 <p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=TheCodingDad-TisonK&theme=github_dark" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=TheCodingDad-TisonK&theme=github_dark">
 </p>
 
 <p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=TheCodingDad-TisonK&theme=github_dark" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=TheCodingDad-TisonK&theme=github_dark">
 </p>
 
 ---
 
-## 📫 About Me
+## 📫 A Bit More About Me
 
 I’m a proud dad who codes for **fun, creativity, and learning**.  
-Feel free to explore my projects — feedback, ideas, and contributions are always welcome!
+I enjoy sharing what I build and improving projects over time based on feedback.
 
-> **Fun fact:** I also publish mods on **KingMods** and **ModHub** for Farming Simulator 22 & 25 🚜
+💬 Suggestions, ideas, and contributions are always welcome.
+
+> 🚜 **Fun fact:** I also publish mods on **KingMods** and **ModHub** for Farming Simulator 22 & 25.
