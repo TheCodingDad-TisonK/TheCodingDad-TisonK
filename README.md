@@ -46,9 +46,9 @@ Designing realistic gameplay systems and practical utility mods for FS22 & FS25.
 ## 🛠 What I Build
 
 ### 🚜 Farming Simulator Mods
-- Soil, fertilizer, and economy systems
-- Gameplay balance and realism tweaks
-- In-game UI helpers and tools
+- Mostly scripts based on realism and economy systems
+- Gameplay balanced and realism based mods
+- Tools and utility mods
 
 ### 📦 Lua Scripts
 - Lightweight, efficient scripting
