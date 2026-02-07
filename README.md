@@ -74,9 +74,11 @@ Designing realistic gameplay systems and practical utility mods for FS22 & FS25.
 | Project | Focus |
 |-------|-------|
 | **FS25_SoilFertilizer** | Realistic soil fertility mechanics and nutrient cycles |
-| **FS22_WorkerCosts** | Skill-based worker wages and configurable costs |
-| **FS22_AdvancedFarmLogistics** | Advanced logistics and farm management systems |
+| **FS25_WorkerCosts** | Skill-based worker wages and configurable costs |
+| **FS25_NPCFavor** | Bring your farm to life with NPC's |
+| **FS22_RandomWorldEvents** | Over 80 random events that can happen |
 | **FS22_FarmTablet** | Tablet-style in-game UI with essential farm data |
+| **FS22_IncomeMod** | Gives hourly/daily payments |
 
 👉 **Explore everything here:**  
 🔗 https://github.com/TheCodingDad-TisonK?tab=repositories
