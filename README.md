@@ -1,141 +1,462 @@
-<!-- ========================================================= -->
-<!-- ====================== HEADER =========================== -->
-<!-- ========================================================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>TheCodingDad-TisonK — GitHub Profile</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet"/>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:111111,100:2e7d32&height=160&section=header&text=TheCodingDad-TisonK&fontSize=38&fontColor=ffffff&animation=fadeIn&fontAlignY=35" />
-</p>
+  :root {
+    --bg: #0d1117;
+    --surface: #161b22;
+    --surface2: #1c2128;
+    --border: #30363d;
+    --green-dim: #1b5e20;
+    --green: #2e7d32;
+    --green-bright: #4caf50;
+    --green-light: #a5d6a7;
+    --text: #e6edf3;
+    --text-muted: #8b949e;
+    --accent: #ff6f00;
+  }
 
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&pause=1200&color=2E7D32&center=true&vCenter=true&width=700&lines=Farming+Simulator+Systems+Developer;Lua+Gameplay+Engineer;Realism+Focused+Mod+Architect;Performance-Optimized+Game+Systems" />
-</p>
+  html { scroll-behavior: smooth; }
 
-<br>
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px;
+    line-height: 1.7;
+    min-height: 100vh;
+  }
 
-<!-- ====================== BADGES =========================== -->
+  /* ── HEADER ── */
+  .hero {
+    background: linear-gradient(160deg, #0a0a0a 0%, #1b5e20 55%, #2e7d32 100%);
+    padding: 72px 32px 56px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 40px,
+      rgba(46,125,50,0.05) 40px,
+      rgba(46,125,50,0.05) 41px
+    );
+    pointer-events: none;
+  }
+  .hero-name {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.2rem, 5vw, 3.8rem);
+    font-weight: 900;
+    letter-spacing: -1px;
+    color: #fff;
+    text-shadow: 0 2px 24px rgba(0,0,0,0.6);
+    margin-bottom: 8px;
+  }
+  .hero-sub {
+    font-size: 0.95rem;
+    color: var(--green-light);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    opacity: 0.9;
+  }
 
-<p align="center">
-  <a href="https://github.com/TheCodingDad-TisonK?tab=repositories">
-    <img src="https://img.shields.io/badge/Repositories-View-2e7d32?style=for-the-badge" />
-  </a>
-  <a href="https://www.kingmods.net">
-    <img src="https://img.shields.io/badge/KingMods-Published-orange?style=for-the-badge" />
-  </a>
-  <a href="https://discord.gg/sJyKJCJh">
-    <img src="https://img.shields.io/badge/Discord-Community-5865F2?style=for-the-badge&logo=discord&logoColor=white" />
-  </a>
-</p>
+  /* Typing animation */
+  .typing-lines {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 36px;
+  }
+  .typing-line {
+    font-size: 0.85rem;
+    color: var(--green-bright);
+    opacity: 0;
+    animation: fadeSlideIn 0.6s forwards;
+  }
+  .typing-line:nth-child(1) { animation-delay: 0.3s; }
+  .typing-line:nth-child(2) { animation-delay: 0.6s; }
+  .typing-line:nth-child(3) { animation-delay: 0.9s; }
+  .typing-line:nth-child(4) { animation-delay: 1.2s; }
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=TheCodingDad-TisonK&style=for-the-badge&color=2e7d32" />
-</p>
+  @keyframes fadeSlideIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
 
----
+  .badge-row {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 18px;
+    border-radius: 6px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    transition: transform 0.2s, filter 0.2s;
+  }
+  .badge:hover { transform: translateY(-2px); filter: brightness(1.15); }
+  .badge-green { background: var(--green); color: #fff; }
+  .badge-orange { background: var(--accent); color: #fff; }
+  .badge-discord { background: #5865f2; color: #fff; }
 
-# 🌾 Systems Developer • Gameplay Architect
+  /* ── MAIN ── */
+  main { max-width: 860px; margin: 0 auto; padding: 0 24px 80px; }
 
-I’m **Tison**, a Farming Simulator systems developer focused on immersive, realistic, and performance-optimized gameplay mechanics.
+  section { padding: 52px 0 0; }
 
-I build systems that:
+  .section-label {
+    font-size: 0.65rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--green-bright);
+    margin-bottom: 8px;
+    opacity: 0.8;
+  }
 
-- Integrate naturally into base game logic  
-- Enhance realism without unnecessary complexity  
-- Prioritize performance and long-term stability  
-- Follow modular, maintainable Lua architecture  
+  h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 20px;
+    line-height: 1.2;
+  }
 
-> _Immersion first. Performance always._
+  hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 52px 0 0;
+    opacity: 0.5;
+  }
 
----
+  p { color: var(--text-muted); margin-bottom: 16px; max-width: 640px; }
 
-# 🚜 Core Expertise
+  .quote-block {
+    border-left: 3px solid var(--green-bright);
+    padding: 16px 24px;
+    margin: 24px 0;
+    background: var(--surface);
+    border-radius: 0 8px 8px 0;
+  }
+  .quote-block p {
+    color: var(--green-light);
+    font-style: italic;
+    font-size: 0.95rem;
+    margin: 0;
+    max-width: none;
+  }
 
-## 🌱 Gameplay Systems
-- Soil & nutrient simulations  
-- Economic balancing models  
-- Worker AI cost frameworks  
-- Dynamic environmental events  
+  /* ── TWO COL ── */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 16px;
+  }
+  @media (max-width: 600px) { .two-col { grid-template-columns: 1fr; } }
 
-## 🧑‍💻 Lua Engineering
-- Lightweight scripting  
-- Modular architecture  
-- Optimization & profiling  
-- Scalable system design  
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 24px;
+    transition: border-color 0.2s, transform 0.2s;
+  }
+  .card:hover { border-color: var(--green); transform: translateY(-2px); }
+  .card h3 { font-size: 0.95rem; color: var(--green-bright); margin-bottom: 14px; }
+  .card ul { list-style: none; }
+  .card ul li { color: var(--text-muted); font-size: 0.82rem; padding: 4px 0; }
+  .card ul li::before { content: '▸ '; color: var(--green-bright); }
 
----
+  /* ── MOD TABLE ── */
+  table { width: 100%; border-collapse: collapse; margin-top: 20px; font-size: 0.82rem; }
+  thead tr { border-bottom: 2px solid var(--green-dim); }
+  thead th { color: var(--green-bright); text-align: left; padding: 10px 14px; font-size: 0.72rem; letter-spacing: 1px; text-transform: uppercase; }
+  tbody tr { border-bottom: 1px solid var(--border); transition: background 0.15s; }
+  tbody tr:hover { background: var(--surface); }
+  tbody td { padding: 12px 14px; color: var(--text-muted); vertical-align: top; }
+  .mod-name { color: var(--text); font-weight: 600; }
+  .tag { display: inline-block; padding: 2px 8px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; }
+  .tag-active { background: rgba(76,175,80,0.15); color: var(--green-bright); border: 1px solid rgba(76,175,80,0.3); }
+  .tag-beta { background: rgba(255,193,7,0.12); color: #ffd54f; border: 1px solid rgba(255,193,7,0.25); }
+  .tag-released { background: rgba(100,100,100,0.15); color: #9e9e9e; border: 1px solid rgba(100,100,100,0.25); }
 
-# 🚀 Highlighted Mods
+  /* ── CODE BLOCK ── */
+  .code-block {
+    background: #0a0f14;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 28px;
+    margin-top: 20px;
+    overflow-x: auto;
+    position: relative;
+  }
+  .code-block::before {
+    content: 'LUA';
+    position: absolute;
+    top: 12px; right: 16px;
+    font-size: 0.65rem;
+    letter-spacing: 2px;
+    color: var(--green-bright);
+    opacity: 0.6;
+  }
+  .code-block pre {
+    font-size: 0.8rem;
+    line-height: 1.8;
+    color: #c9d1d9;
+    white-space: pre;
+  }
+  .code-comment { color: #6a9955; }
+  .code-keyword { color: #569cd6; }
+  .code-fn { color: #dcdcaa; }
+  .code-string { color: #ce9178; }
+  .code-var { color: #9cdcfe; }
 
-| System | Description |
-|--------|-------------|
-| **FS25_SoilFertilizer** | Advanced soil & nutrient simulation |
-| **FS25_WorkerCosts** | Dynamic skill-based wage system |
-| **FS25_NPCFavor** | Immersive NPC interaction mechanics |
-| **FS22_RandomWorldEvents** | 80+ dynamic world systems |
-| **FS22_FarmTablet** | In-game tablet management interface |
-| **FS22_IncomeMod** | Configurable economy balancing |
+  /* ── TECH STACK ── */
+  .stack-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 16px;
+  }
+  .stack-chip {
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+    letter-spacing: 0.5px;
+  }
+  .stack-chip.lua { border-color: #2C2D72; color: #7986cb; }
+  .stack-chip.xml { border-color: #bf360c; color: #ff8a65; }
+  .stack-chip.git { border-color: #b71c1c; color: #ef5350; }
+  .stack-chip.vsc { border-color: #0277bd; color: #29b6f6; }
+  .stack-chip.fs  { border-color: var(--green-dim); color: var(--green-bright); }
 
-<p align="center">
-  <a href="https://github.com/TheCodingDad-TisonK?tab=repositories">
-    <b>Explore all mods →</b>
-  </a>
-</p>
+  /* ── ABOUT ── */
+  .about-text { font-size: 0.9rem; }
 
----
+  /* ── FOOTER ── */
+  footer {
+    background: linear-gradient(160deg, #2e7d32, #1b5e20, #0a0a0a);
+    text-align: center;
+    padding: 40px 24px;
+    margin-top: 80px;
+    font-size: 0.78rem;
+    color: var(--green-light);
+    letter-spacing: 1px;
+  }
 
-# 📊 GitHub Analytics
+  /* ── DIVIDER ── */
+  .green-line {
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--green), transparent);
+    margin: 52px 0 0;
+    opacity: 0.4;
+  }
+</style>
+</head>
+<body>
 
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=TheCodingDad-TisonK&theme=dark&ring=2E7D32&fire=2E7D32&currStreakLabel=2E7D32&background=111111" />
-</p>
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-name">TheCodingDad · TisonK</div>
+  <div class="hero-sub">Farming Simulator Systems Developer</div>
+  <div class="typing-lines">
+    <div class="typing-line">🌾 Farming Simulator Systems Developer</div>
+    <div class="typing-line">⚙️ Performance-First Lua Engineer</div>
+    <div class="typing-line">🧠 Realism-Focused Mod Architect</div>
+    <div class="typing-line">👨‍👧‍👦 Proud Dad | Lifelong Builder</div>
+  </div>
+  <div class="badge-row">
+    <a class="badge badge-green" href="#">⬡ View Repositories</a>
+    <a class="badge badge-orange" href="#">📦 KingMods Published</a>
+    <a class="badge badge-discord" href="#">💬 Join Discord</a>
+  </div>
+</header>
 
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=TheCodingDad-TisonK&theme=github_dark" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=TheCodingDad-TisonK&theme=github_dark" />
-</p>
+<main>
 
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=TheCodingDad-TisonK&theme=github_dark" />
-</p>
+  <!-- ABOUT -->
+  <section>
+    <div class="section-label">// About</div>
+    <h2>Who I Am</h2>
+    <p class="about-text">
+      I'm <strong style="color:var(--text)">Tison</strong> — a Farming Simulator mod developer focused on systems that <em>feel</em> real.
+      Every mod I ship is built around three principles:
+    </p>
+    <div class="quote-block">
+      <p>Immersion first. Performance always. Complexity only when it earns its place.</p>
+    </div>
+    <p class="about-text">
+      I don't add features for the sake of features. I build systems that integrate naturally into the base game, enhance realism in ways players <em>feel</em> without noticing, and stay maintainable long after release.
+    </p>
+  </section>
 
----
+  <div class="green-line"></div>
 
-# 🏆 Achievements
+  <!-- WHAT I BUILD -->
+  <section>
+    <div class="section-label">// Expertise</div>
+    <h2>What I Build</h2>
+    <div class="two-col">
+      <div class="card">
+        <h3>🌱 Gameplay Systems</h3>
+        <ul>
+          <li>Soil chemistry & nutrient simulation</li>
+          <li>Dynamic economic balancing</li>
+          <li>Skill-based worker AI cost models</li>
+          <li>Procedural environmental events</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>🧑‍💻 Lua Engineering</h3>
+        <ul>
+          <li>Lightweight, modular scripting</li>
+          <li>Performance profiling & optimization</li>
+          <li>Scalable event-driven architecture</li>
+          <li>Clean separation of concerns</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=TheCodingDad-TisonK&show_icons=true&theme=github_dark&icon_color=2E7D32&title_color=2E7D32&hide_border=true" />
-</p>
+  <div class="green-line"></div>
 
----
+  <!-- MOD SHOWCASE -->
+  <section>
+    <div class="section-label">// Portfolio</div>
+    <h2>Mod Showcase</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Mod</th>
+          <th>Game</th>
+          <th>Description</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="mod-name">FS25_SoilFertilizer</span></td>
+          <td>FS25</td>
+          <td>Advanced soil chemistry & nutrient simulation</td>
+          <td><span class="tag tag-active">🟢 Active</span></td>
+        </tr>
+        <tr>
+          <td><span class="mod-name">FS25_WorkerCosts</span></td>
+          <td>FS25</td>
+          <td>Dynamic skill-based wage & hiring system</td>
+          <td><span class="tag tag-active">🟢 Active</span></td>
+        </tr>
+        <tr>
+          <td><span class="mod-name">FS25_NPCFavor</span></td>
+          <td>FS25</td>
+          <td>Immersive NPC relationship mechanics</td>
+          <td><span class="tag tag-beta">🟡 Beta</span></td>
+        </tr>
+        <tr>
+          <td><span class="mod-name">FS22_RandomWorldEvents</span></td>
+          <td>FS22</td>
+          <td>80+ dynamic world events & environmental systems</td>
+          <td><span class="tag tag-released">✅ Released</span></td>
+        </tr>
+        <tr>
+          <td><span class="mod-name">FS22_FarmTablet</span></td>
+          <td>FS22</td>
+          <td>In-game tablet UI for farm management</td>
+          <td><span class="tag tag-released">✅ Released</span></td>
+        </tr>
+        <tr>
+          <td><span class="mod-name">FS22_IncomeMod</span></td>
+          <td>FS22</td>
+          <td>Configurable economy & income balancing</td>
+          <td><span class="tag tag-released">✅ Released</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
 
-# 📈 Contribution Graph
+  <div class="green-line"></div>
 
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=TheCodingDad-TisonK&theme=github-dark&color=2E7D32&line=2E7D32&point=ffffff&area=true&hide_border=true" />
-</p>
+  <!-- CURRENTLY BUILDING -->
+  <section>
+    <div class="section-label">// Currently Building</div>
+    <h2>What's In Progress</h2>
+    <div class="code-block">
+      <pre><span class="code-comment">-- FS25: Dynamic Soil Degradation System</span>
+<span class="code-comment">-- Tracks tillage history, compaction, and organic matter decay</span>
+<span class="code-comment">-- across seasons — fully save-game persistent</span>
 
----
+<span class="code-var">SoilDegradation</span> = {}
 
-# 🧠 Continuous Improvement
+<span class="code-keyword">function</span> <span class="code-var">SoilDegradation</span>:<span class="code-fn">onYearChange</span>(<span class="code-var">field</span>)
+  <span class="code-keyword">local</span> <span class="code-var">decay</span>      = self:<span class="code-fn">calculateOrganicDecay</span>(<span class="code-var">field</span>)
+  <span class="code-keyword">local</span> <span class="code-var">compaction</span> = self:<span class="code-fn">accumulateCompaction</span>(<span class="code-var">field</span>)
+  self:<span class="code-fn">applySeasonalEffects</span>(<span class="code-var">field</span>, <span class="code-var">decay</span>, <span class="code-var">compaction</span>)
+<span class="code-keyword">end</span></pre>
+    </div>
+  </section>
 
-- Advanced Lua performance optimization  
-- Farming Simulator 25 systems design  
-- Scalable gameplay architecture  
-- Realistic economic modeling  
+  <div class="green-line"></div>
 
----
+  <!-- TECH STACK -->
+  <section>
+    <div class="section-label">// Tools</div>
+    <h2>Tech Stack</h2>
+    <div class="stack-grid">
+      <div class="stack-chip lua">Lua</div>
+      <div class="stack-chip xml">XML / GLSL</div>
+      <div class="stack-chip git">Git</div>
+      <div class="stack-chip vsc">VS Code</div>
+      <div class="stack-chip fs">Farming Simulator 25</div>
+      <div class="stack-chip fs">GIANTS Engine</div>
+    </div>
+  </section>
 
-# 👨‍👧‍👦 Beyond Development
+  <div class="green-line"></div>
 
-Proud dad. Lifelong learner. Builder of immersive farming systems.
+  <!-- BEYOND THE CODE -->
+  <section>
+    <div class="section-label">// Beyond the Code</div>
+    <h2>The Person Behind the Mods</h2>
+    <p class="about-text">
+      Proud dad. Lifelong learner. I build mods the same way I try to parent — with patience, attention to detail, and a long view.
+    </p>
+    <p class="about-text">
+      Quality over speed. Always.
+    </p>
+    <div class="quote-block">
+      <p>Built for the love of farming — and the craft of code.</p>
+    </div>
+  </section>
 
-I build for passion, long-term quality, and immersive gameplay depth.
+</main>
 
----
+<footer>
+  🌾 &nbsp; TheCodingDad · TisonK &nbsp; • &nbsp; Farming Simulator Systems Developer
+</footer>
 
-<p align="center">
-  🌾 Crafted for Farming Simulator realism
-</p>
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2e7d32,100:111111&height=110&section=footer"/>
-</p>
+</body>
+</html>
