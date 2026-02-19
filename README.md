@@ -8,9 +8,6 @@
   <a href="https://www.kingmods.net">
     <img src="https://img.shields.io/badge/KingMods-Mods-orange?style=for-the-badge">
   </a>
-  <a href="https://discord.gg/sJyKJCJh">
-    <img src="https://img.shields.io/badge/Discord-blue?style=for-the-badge">
-  </a>
 </p>
 
 <br>
@@ -21,6 +18,9 @@
   🚜 Farming Simulator Modder • 🧑‍💻 Lua Scripter • 👨‍👧‍👦 Coding Dad  
   <br>
   <strong>FS22 • FS25 • Gameplay Systems & Realism</strong>
+  <a href="https://discord.gg/sJyKJCJh">
+    <img src="https://img.shields.io/badge/Discord-blue?style=for-the-badge">
+  </a>
 </p>
 
 <br>
