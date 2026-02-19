@@ -9,10 +9,7 @@
 </p>
 
 <!-- ====== BADGES ROW ====== -->
-<p align="center">
-  <a href="https://github.com/TheCodingDad-TisonK">
-    <img src="https://img.shields.io/badge/GitHub-Profile-181717?style=for-the-badge&logo=github&logoColor=white">
-  </a>
+<p align="center">>
   <a href="https://github.com/TheCodingDad-TisonK?tab=repositories">
     <img src="https://img.shields.io/badge/Repositories-View-2e7d32?style=for-the-badge">
   </a>
