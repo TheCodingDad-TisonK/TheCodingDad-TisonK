@@ -19,25 +19,24 @@
     <img src="https://img.shields.io/badge/About%20me-2e7d32?style=for-the-badge&logo=github&logoColor=white" />
   </a>
 </p>
-
 <p align="center">
   <a href="https://github.com/TheCodingDad-TisonK?tab=repositories">
-    <img src="https://img.shields.io/badge/Repositories-Show%20Me-2e7d32?style=for-the-badge" />
+    <img src="https://img.shields.io/badge/Repositories-Show%20Me-2e7d32?style=for-the-badge&logo=github&logoColor=white" />
   </a>
   <a href="https://www.kingmods.net/nl/profile/tisonk?tab=mods">
-    <img src="https://img.shields.io/badge/KingMods-Published%20Mods-2e7d32?style=for-the-badge" />
+    <img src="https://img.shields.io/badge/KingMods-Published%20Mods-2e7d32?style=for-the-badge&logo=modrinth&logoColor=white" />
   </a>
   <a href="https://discord.gg/sJyKJCJh">
     <img src="https://img.shields.io/badge/Discord-Join%20Community-2e7d32?style=for-the-badge&logo=discord&logoColor=white" />
   </a>
-  <a">
-    <img src="https://komarev.com/ghpvc/?username=TheCodingDad-TisonK&style=for-the-badge&color=2e7d32" />
+  <a>
+    <img src="https://komarev.com/ghpvc/?username=TheCodingDad-TisonK&style=for-the-badge&color=2e7d32&logo=eye&label=Profile+Views" />
   </a>
 </p>
 
 ---
 
-# 🌾 Systems Developer • Gameplay Architect
+# 🌾 Hobby Developer • Gameplay Modder
 
 I'm **Tison**, a hobby developer focused on immersive, realistic, and performance-optimized gameplay mechanics.
 
