@@ -60,14 +60,6 @@
 
 <p align="center"><img src="https://capsule-render.vercel.app/api?type=soft&color=0:0d1117,100:0d1117&height=36&text=%2F%2F%20Achievements&fontSize=13&fontColor=4CAF50&fontAlignY=72" width="100%"/></p>
 
-<h3 align="center">Achievements</h3>
-
-<br>
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=TheCodingDad-TisonK&theme=darkhub&column=6&margin-w=8&margin-h=8&no-bg=true&no-frame=true" />
-</p>
-
 <br>
 
 <p align="center"><img src="https://capsule-render.vercel.app/api?type=rect&color=0:1b5e20,100:2e7d32&height=3" width="100%"/></p>
