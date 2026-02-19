@@ -102,7 +102,7 @@ I build systems that:
 # 🏆 Achievements
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=TheCodingDad-TisonK&theme=darkhub&no-frame=true&row=1&column=6" />
+  <img src="https://github-profile-trophy.vercel.app/?username=TheCodingDad-TisonK&theme=onedark&no-frame=true&margin-w=10&margin-h=10&row=1&column=7" />
 </p>
 
 ---
