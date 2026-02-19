@@ -8,8 +8,8 @@
   <a href="https://www.kingmods.net">
     <img src="https://img.shields.io/badge/KingMods-Mods-orange?style=for-the-badge">
   </a>
-  <a href="https://www.farming-simulator.com/mods.php">
-    <img src="https://img.shields.io/badge/Discord-%20https://discord.gg/sJyKJCJh-blue?style=for-the-badge">
+  <a href="https://discord.gg/sJyKJCJh">
+    <img src="https://img.shields.io/badge/Discord-blue?style=for-the-badge">
   </a>
 </p>
 
@@ -22,8 +22,6 @@
   <br>
   <strong>FS22 • FS25 • Gameplay Systems & Realism</strong>
 </p>
-
-<h3 align="center">Discord: https://discord.gg/sJyKJCJh</strong></h3>
 
 <br>
 
