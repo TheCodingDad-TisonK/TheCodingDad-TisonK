@@ -89,10 +89,6 @@ I create mods that:
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=TheCodingDad-TisonK&theme=github_dark" />
 </p>
 
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=TheCodingDad-TisonK&theme=github_dark" />
-</p>
-
 ---
 
 ## 🧠 Continuous Improvement
