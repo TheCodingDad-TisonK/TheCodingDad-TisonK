@@ -63,7 +63,7 @@ I build systems that:
 
 ---
 
-# 🚀 Highlighted Systems
+# 🚀 Highlighted Mods
 
 | System | Description |
 |--------|-------------|
@@ -76,7 +76,7 @@ I build systems that:
 
 <p align="center">
   <a href="https://github.com/TheCodingDad-TisonK?tab=repositories">
-    <b>Explore All Systems →</b>
+    <b>Explore all mods →</b>
   </a>
 </p>
 
