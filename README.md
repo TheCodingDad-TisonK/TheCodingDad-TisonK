@@ -16,7 +16,7 @@
 
 <p align="center">
   <a href="https://github.com/TheCodingDad-TisonK?tab=repositories">
-    <img src="https://img.shields.io/badge/Repositories-Show%20Me-2e7d32?style=for-the-badge" />
+    <img src="https://img.shields.io/badge/Repositories-Bring%20Me%20There-2e7d32?style=for-the-badge" />
   </a>
   <a href="https://www.kingmods.net/nl/profile/tisonk?tab=mods">
     <img src="https://img.shields.io/badge/KingMods-Published%20Mods-orange?style=for-the-badge" />
