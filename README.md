@@ -19,7 +19,7 @@
     <img src="https://img.shields.io/badge/Repositories-Show%20Me-2e7d32?style=for-the-badge" />
   </a>
   <a href="https://www.kingmods.net/nl/profile/tisonk?tab=mods">
-    <img src="https://img.shields.io/badge/KingMods-My%20Mods-orange?style=for-the-badge" />
+    <img src="https://img.shields.io/badge/KingMods-Published%20Mods-orange?style=for-the-badge" />
   </a>
   <a href="https://discord.gg/sJyKJCJh">
     <img src="https://img.shields.io/badge/Discord-Join%20Community-5865F2?style=for-the-badge&logo=discord&logoColor=white" />
