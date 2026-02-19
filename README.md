@@ -23,6 +23,8 @@
   <strong>FS22 • FS25 • Gameplay Systems & Realism</strong>
 </p>
 
+<h3 align="center">Discord: https://discord.gg/sJyKJCJh</strong></h3>
+
 <br>
 
 ---
