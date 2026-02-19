@@ -1,25 +1,28 @@
-<!-- ====== CLEAN DARK HEADER ====== -->
+<!-- ========================================================= -->
+<!-- ====================== HEADER =========================== -->
+<!-- ========================================================= -->
+
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:111111,100:2e7d32&height=150&section=header&text=TheCodingDad-TisonK&fontSize=36&fontColor=ffffff&animation=fadeIn" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:111111,100:2e7d32&height=160&section=header&text=TheCodingDad-TisonK&fontSize=38&fontColor=ffffff&animation=fadeIn&fontAlignY=35" />
 </p>
 
-<!-- ====== ANIMATED TYPING HEADER ====== -->
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&pause=1200&color=2E7D32&center=true&vCenter=true&width=650&lines=Farming+Simulator+Systems+Developer;Lua+Gameplay+Engineer;Immersive+Realism+Design;Performance-Focused+Mod+Architecture" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&pause=1200&color=2E7D32&center=true&vCenter=true&width=700&lines=Farming+Simulator+Systems+Developer;Lua+Gameplay+Engineer;Realism+Focused+Mod+Architect;Performance-Optimized+Game+Systems" />
 </p>
 
 <br>
 
-<!-- ====== BADGES ====== -->
+<!-- ====================== BADGES =========================== -->
+
 <p align="center">
   <a href="https://github.com/TheCodingDad-TisonK?tab=repositories">
-    <img src="https://img.shields.io/badge/Repositories-View-2e7d32?style=for-the-badge">
+    <img src="https://img.shields.io/badge/Repositories-View-2e7d32?style=for-the-badge" />
   </a>
   <a href="https://www.kingmods.net">
-    <img src="https://img.shields.io/badge/KingMods-Published-orange?style=for-the-badge">
+    <img src="https://img.shields.io/badge/KingMods-Published-orange?style=for-the-badge" />
   </a>
   <a href="https://discord.gg/sJyKJCJh">
-    <img src="https://img.shields.io/badge/Discord-Community-5865F2?style=for-the-badge&logo=discord&logoColor=white">
+    <img src="https://img.shields.io/badge/Discord-Community-5865F2?style=for-the-badge&logo=discord&logoColor=white" />
   </a>
 </p>
 
@@ -29,30 +32,30 @@
 
 ---
 
-## 🌾 About
+# 🌾 Systems Developer • Gameplay Architect
 
-I’m **Tison** — a Farming Simulator systems developer focused on building immersive, realistic, and performance-optimized gameplay mechanics.
+I’m **Tison**, a Farming Simulator systems developer focused on immersive, realistic, and performance-optimized gameplay mechanics.
 
-I create mods that:
+I build systems that:
 
+- Integrate naturally into base game logic  
 - Enhance realism without unnecessary complexity  
-- Integrate naturally into base game systems  
-- Maintain performance and long-term stability  
-- Use clean, modular Lua architecture  
+- Prioritize performance and long-term stability  
+- Follow modular, maintainable Lua architecture  
 
 > _Immersion first. Performance always._
 
 ---
 
-## 🚜 Development Focus
+# 🚜 Core Expertise
 
-### Gameplay Systems
+## 🌱 Gameplay Systems
 - Soil & nutrient simulations  
 - Economic balancing models  
-- Worker AI cost systems  
+- Worker AI cost frameworks  
 - Dynamic environmental events  
 
-### Lua Engineering
+## 🧑‍💻 Lua Engineering
 - Lightweight scripting  
 - Modular architecture  
 - Optimization & profiling  
@@ -60,14 +63,14 @@ I create mods that:
 
 ---
 
-## 🚀 Highlighted Projects
+# 🚀 Highlighted Systems
 
-| System | Focus |
-|--------|--------|
+| System | Description |
+|--------|-------------|
 | **FS25_SoilFertilizer** | Advanced soil & nutrient simulation |
 | **FS25_WorkerCosts** | Dynamic skill-based wage system |
 | **FS25_NPCFavor** | Immersive NPC interaction mechanics |
-| **FS22_RandomWorldEvents** | 80+ dynamic random world systems |
+| **FS22_RandomWorldEvents** | 80+ dynamic world systems |
 | **FS22_FarmTablet** | In-game tablet management interface |
 | **FS22_IncomeMod** | Configurable economy balancing |
 
@@ -79,7 +82,7 @@ I create mods that:
 
 ---
 
-## 📊 Development Activity
+# 📊 GitHub Analytics
 
 <p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=TheCodingDad-TisonK&theme=dark&ring=2E7D32&fire=2E7D32&currStreakLabel=2E7D32&background=111111" />
@@ -87,24 +90,45 @@ I create mods that:
 
 <p align="center">
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=TheCodingDad-TisonK&theme=github_dark" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=TheCodingDad-TisonK&theme=github_dark" />
+</p>
+
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=TheCodingDad-TisonK&theme=github_dark" />
 </p>
 
 ---
 
-## 🧠 Continuous Improvement
+# 🏆 Achievements
 
-- Advanced Lua optimization  
-- Farming Simulator 25 system design  
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=TheCodingDad-TisonK&theme=darkhub&no-frame=true&row=1&column=6" />
+</p>
+
+---
+
+# 📈 Contribution Graph
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=TheCodingDad-TisonK&theme=github-dark&color=2E7D32&line=2E7D32&point=ffffff&area=true&hide_border=true" />
+</p>
+
+---
+
+# 🧠 Continuous Improvement
+
+- Advanced Lua performance optimization  
+- Farming Simulator 25 systems design  
 - Scalable gameplay architecture  
 - Realistic economic modeling  
 
 ---
 
-## 👨‍👧‍👦 Beyond Development
+# 👨‍👧‍👦 Beyond Development
 
 Proud dad. Lifelong learner. Builder of immersive farming systems.
 
-I build for passion, quality, and long-term refinement.
+I build for passion, long-term quality, and immersive gameplay depth.
 
 ---
 
@@ -113,5 +137,5 @@ I build for passion, quality, and long-term refinement.
 </p>
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2e7d32,100:111111&height=100&section=footer"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2e7d32,100:111111&height=110&section=footer"/>
 </p>
