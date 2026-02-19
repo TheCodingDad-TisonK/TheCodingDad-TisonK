@@ -99,14 +99,6 @@ I build systems that:
 
 ---
 
-# 🏆 Achievements
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=TheCodingDad-TisonK&show_icons=true&theme=github_dark&icon_color=2E7D32&title_color=2E7D32&hide_border=true" />
-</p>
-
----
-
 # 📈 Contribution Graph
 
 <p align="center">
