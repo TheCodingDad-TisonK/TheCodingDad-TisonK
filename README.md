@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&pause=1200&color=2E7D32&center=true&vCenter=true&width=700&lines=Farming+Simulator+Systems+Developer;Lua+Gameplay+Engineer;Realism+Focused+Mod+Architect;Performance-Optimized+Game+Systems" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&pause=1200&color=2E7D32&center=true&vCenter=true&width=700&lines=Farming+Simulator+Hobbiest+Developer;Lua+Gameplay+Modder;Realism+Focused+Mod+Architect;Performance-Optimized+Game+Systems" />
 </p>
 
 <br>
