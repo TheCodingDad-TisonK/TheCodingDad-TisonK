@@ -124,7 +124,9 @@ I build systems that:
 
 # 👨‍👧‍👦 Beyond Development
 
-Proud dad. Lifelong learner. Builder of immersive farming systems.
+- Im a proud dad (24) with a lovely daughter and a beautyfull girlfriend <3.
+- Lifelong learner, I learn alot from our human species.
+- Builder of immersive farming systems, Not just basic scripting...
 
 I build for passion, long-term quality, and immersive gameplay depth.
 
