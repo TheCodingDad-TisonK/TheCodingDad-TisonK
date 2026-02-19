@@ -29,10 +29,10 @@
   <a href="https://discord.gg/sJyKJCJh">
     <img src="https://img.shields.io/badge/Discord-Join%20Community-2e7d32?style=for-the-badge&logo=discord&logoColor=white" />
   </a>
-  <a>
+</p>
+<a>
     <img src="https://komarev.com/ghpvc/?username=TheCodingDad-TisonK&style=for-the-badge&color=2e7d32&logo=eye&label=Profile+Views" />
   </a>
-</p>
 
 ---
 
