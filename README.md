@@ -39,7 +39,7 @@
 
 # 🌾 Systems Developer • Gameplay Architect
 
-I'm **Tison**, a Farming Simulator systems developer focused on immersive, realistic, and performance-optimized gameplay mechanics.
+I'm **Tison**, a hobby developer focused on immersive, realistic, and performance-optimized gameplay mechanics.
 
 I build systems that:
 
