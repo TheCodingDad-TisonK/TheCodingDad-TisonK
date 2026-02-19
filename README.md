@@ -16,7 +16,7 @@
 
 <p align="center">
   <a href="https://thecodingdad-tisonk.github.io/TheCodingDad-TisonK/">
-    <img src="https://img.shields.io/badge/Get%20to%20know%20me-2e7d32?style=for-the-badge&logo=github&logoColor=white" />
+    <img src="https://img.shields.io/badge/About%20me-2e7d32?style=for-the-badge&logo=github&logoColor=white" />
   </a>
 </p>
 
