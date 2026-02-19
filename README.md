@@ -15,6 +15,12 @@
 <!-- ====================== BADGES =========================== -->
 
 <p align="center">
+  <a href="https://thecodingdad-tisonk.github.io/TheCodingDad-TisonK/">
+    <img src="https://img.shields.io/badge/🌐%20View%20Full%20Profile%20Site-2e7d32?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+</p>
+
+<p align="center">
   <a href="https://github.com/TheCodingDad-TisonK?tab=repositories">
     <img src="https://img.shields.io/badge/Repositories-Show%20Me-2e7d32?style=for-the-badge" />
   </a>
@@ -28,12 +34,6 @@
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=TheCodingDad-TisonK&style=for-the-badge&color=2e7d32" />
-</p>
-
-<p align="center">
-  <a href="https://thecodingdad-tisonk.github.io/TheCodingDad-TisonK/">
-    <img src="https://img.shields.io/badge/🌐%20View%20Full%20Profile%20Site-2e7d32?style=for-the-badge&logo=github&logoColor=white" />
-  </a>
 </p>
 
 ---
