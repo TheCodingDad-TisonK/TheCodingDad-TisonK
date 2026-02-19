@@ -9,7 +9,7 @@
     <img src="https://img.shields.io/badge/KingMods-Mods-orange?style=for-the-badge">
   </a>
   <a href="https://www.farming-simulator.com/mods.php">
-    <img src="https://img.shields.io/badge/ModHub-Farming%20Simulator-blue?style=for-the-badge">
+    <img src="https://img.shields.io/badge/Discord-%20https://discord.gg/sJyKJCJh-blue?style=for-the-badge">
   </a>
 </p>
 
