@@ -898,15 +898,26 @@ footer {
 </section>
 
 <!-- MODS -->
-<!-- MODS -->
 <section class="section fade-in" id="mods">
   <div class="section-head">
     <span class="section-num">03</span>
     <h2 class="section-title">The mods</h2>
   </div>
+
+  <!-- Filter buttons -->
+  <div class="mod-filters" style="margin-bottom:20px; display:flex; gap:12px; flex-wrap:wrap;">
+    <button class="filter-btn" data-game="all">All Games</button>
+    <button class="filter-btn" data-game="FS25">FS25</button>
+    <button class="filter-btn" data-game="FS22">FS22</button>
+    <button class="filter-btn" data-status="all">All Statuses</button>
+    <button class="filter-btn" data-status="Active">Active</button>
+    <button class="filter-btn" data-status="Paused">Paused</button>
+    <button class="filter-btn" data-status="Work in Progress">WIP</button>
+  </div>
+
   <div class="mod-list">
     <!-- FS25 Mods -->
-    <div class="mod-row">
+    <div class="mod-row" data-game="FS25" data-status="Active">
       <div class="mod-name">FS25_NPCFavor</div>
       <div class="mod-game">FS25</div>
       <div class="mod-desc">Deep, immersive NPC relationship &amp; interaction system.</div>
@@ -915,7 +926,8 @@ footer {
         <span class="mod-dev-status status-active">Active</span>
       </div>
     </div>
-    <div class="mod-row">
+
+    <div class="mod-row" data-game="FS25" data-status="Active">
       <div class="mod-name">FS25_SoilFertilizer</div>
       <div class="mod-game">FS25</div>
       <div class="mod-desc">Advanced soil chemistry and nutrient simulation.</div>
@@ -924,7 +936,8 @@ footer {
         <span class="mod-dev-status status-active">Active</span>
       </div>
     </div>
-    <div class="mod-row">
+
+    <div class="mod-row" data-game="FS25" data-status="Active">
       <div class="mod-name">FS25_SeasonalCropStress</div>
       <div class="mod-game">FS25</div>
       <div class="mod-desc">Dynamic seasonal crop stress &amp; irrigation system.</div>
@@ -933,7 +946,8 @@ footer {
         <span class="mod-dev-status status-active">Active</span>
       </div>
     </div>
-    <div class="mod-row">
+
+    <div class="mod-row" data-game="FS25" data-status="Active">
       <div class="mod-name">FS25_WorkerCosts</div>
       <div class="mod-game">FS25</div>
       <div class="mod-desc">Skill-based worker wage system with economic impact.</div>
@@ -942,7 +956,8 @@ footer {
         <span class="mod-dev-status status-active">Active</span>
       </div>
     </div>
-    <div class="mod-row">
+
+    <div class="mod-row" data-game="FS25" data-status="Active">
       <div class="mod-name">FS25_IncomeMod</div>
       <div class="mod-game">FS25</div>
       <div class="mod-desc">Configurable economy rebalancing system.</div>
@@ -951,7 +966,8 @@ footer {
         <span class="mod-dev-status status-active">Active</span>
       </div>
     </div>
-    <div class="mod-row">
+
+    <div class="mod-row" data-game="FS25" data-status="Paused">
       <div class="mod-name">FS25_RandomWorldEvents</div>
       <div class="mod-game">FS25</div>
       <div class="mod-desc">80+ dynamic environmental &amp; world event systems.</div>
@@ -960,7 +976,8 @@ footer {
         <span class="mod-dev-status status-paused">Paused</span>
       </div>
     </div>
-    <div class="mod-row">
+
+    <div class="mod-row" data-game="FS25" data-status="Paused">
       <div class="mod-name">FS25_FarmTablet</div>
       <div class="mod-game">FS25</div>
       <div class="mod-desc">Interactive in-game tablet for farm management and stats.</div>
@@ -969,7 +986,8 @@ footer {
         <span class="mod-dev-status status-paused">Paused</span>
       </div>
     </div>
-    <div class="mod-row">
+
+    <div class="mod-row" data-game="FS25" data-status="Active">
       <div class="mod-name">FS25_EmployeeManager</div>
       <div class="mod-game">FS25</div>
       <div class="mod-desc">Deep employee management system: hiring, salaries, vehicle assignment.</div>
@@ -980,7 +998,7 @@ footer {
     </div>
 
     <!-- FS22 Mods placeholders -->
-    <div class="mod-row">
+    <div class="mod-row" data-game="FS22" data-status="Active">
       <div class="mod-name">FS22_ModName1</div>
       <div class="mod-game">FS22</div>
       <div class="mod-desc">Description goes here.</div>
@@ -989,7 +1007,7 @@ footer {
         <span class="mod-dev-status status-active">Active</span>
       </div>
     </div>
-    <div class="mod-row">
+    <div class="mod-row" data-game="FS22" data-status="Active">
       <div class="mod-name">FS22_ModName2</div>
       <div class="mod-game">FS22</div>
       <div class="mod-desc">Description goes here.</div>
@@ -998,7 +1016,7 @@ footer {
         <span class="mod-dev-status status-active">Active</span>
       </div>
     </div>
-    <div class="mod-row">
+    <div class="mod-row" data-game="FS22" data-status="Active">
       <div class="mod-name">FS22_ModName3</div>
       <div class="mod-game">FS22</div>
       <div class="mod-desc">Description goes here.</div>
@@ -1009,6 +1027,32 @@ footer {
     </div>
   </div>
 </section>
+
+<!-- JS for filtering -->
+<script>
+const filterButtons = document.querySelectorAll('.filter-btn');
+const modRows = document.querySelectorAll('.mod-row');
+
+let currentGame = 'all';
+let currentStatus = 'all';
+
+filterButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const game = btn.dataset.game;
+    const status = btn.dataset.status;
+
+    if (game !== undefined) currentGame = game;
+    if (status !== undefined) currentStatus = status;
+
+    modRows.forEach(row => {
+      const matchesGame = (currentGame === 'all') || (row.dataset.game === currentGame);
+      const matchesStatus = (currentStatus === 'all') || (row.dataset.status === currentStatus);
+
+      row.style.display = (matchesGame && matchesStatus) ? 'grid' : 'none';
+    });
+  });
+});
+</script>
 
 <!-- BOTS -->
 <section class="section fade-in" id="bots">
