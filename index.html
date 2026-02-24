@@ -904,17 +904,6 @@ footer {
     <h2 class="section-title">The mods</h2>
   </div>
 
-  <!-- Filter buttons -->
-  <div class="mod-filters" style="margin-bottom:20px; display:flex; gap:12px; flex-wrap:wrap;">
-    <button class="filter-btn" data-game="all">All Games</button>
-    <button class="filter-btn" data-game="FS25">FS25</button>
-    <button class="filter-btn" data-game="FS22">FS22</button>
-    <button class="filter-btn" data-status="all">All Statuses</button>
-    <button class="filter-btn" data-status="Active">Active</button>
-    <button class="filter-btn" data-status="Paused">Paused</button>
-    <button class="filter-btn" data-status="Work in Progress">WIP</button>
-  </div>
-
   <div class="mod-list">
     <!-- FS25 Mods -->
     <div class="mod-row" data-game="FS25" data-status="Active">
@@ -987,16 +976,6 @@ footer {
       </div>
     </div>
 
-    <div class="mod-row" data-game="FS25" data-status="Active">
-      <div class="mod-name">FS25_EmployeeManager</div>
-      <div class="mod-game">FS25</div>
-      <div class="mod-desc">Deep employee management system: hiring, salaries, vehicle assignment.</div>
-      <div class="mod-statuses">
-        <span class="mod-status status-released">Released</span>
-        <span class="mod-dev-status status-active">Active</span>
-      </div>
-    </div>
-
     <!-- FS22 Mods placeholders -->
     <div class="mod-row" data-game="FS22" data-status="Active">
       <div class="mod-name">FS22_ModName1</div>
@@ -1027,32 +1006,6 @@ footer {
     </div>
   </div>
 </section>
-
-<!-- JS for filtering -->
-<script>
-const filterButtons = document.querySelectorAll('.filter-btn');
-const modRows = document.querySelectorAll('.mod-row');
-
-let currentGame = 'all';
-let currentStatus = 'all';
-
-filterButtons.forEach(btn => {
-  btn.addEventListener('click', () => {
-    const game = btn.dataset.game;
-    const status = btn.dataset.status;
-
-    if (game !== undefined) currentGame = game;
-    if (status !== undefined) currentStatus = status;
-
-    modRows.forEach(row => {
-      const matchesGame = (currentGame === 'all') || (row.dataset.game === currentGame);
-      const matchesStatus = (currentStatus === 'all') || (row.dataset.status === currentStatus);
-
-      row.style.display = (matchesGame && matchesStatus) ? 'grid' : 'none';
-    });
-  });
-});
-</script>
 
 <!-- BOTS -->
 <section class="section fade-in" id="bots">
