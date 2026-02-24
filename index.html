@@ -14,16 +14,13 @@
 --bg2:#0d1510;
 --surface:#111a12;
 --border:#1e2e20;
---border2:#2a3e2c;
 --green:#2d6e30;
---green-md:#3d8c41;
 --green-br:#5cb85f;
---green-lt:#a8d5aa;
 --cream:#e8dfc8;
---cream-dk:#c4b896;
 --text:#dde8dd;
 --text-dim:#7a9e7c;
 --accent:#d4a843;
+--danger:#ff6b6b;
 }
 
 body{
@@ -44,7 +41,12 @@ z-index:100;
 background:linear-gradient(to bottom,rgba(8,14,9,.95),transparent);
 }
 
-.nav-links{display:flex;gap:30px;list-style:none}
+.nav-links{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
 .nav-links a{
 font-family:'Space Mono',monospace;
 font-size:.65rem;
@@ -53,7 +55,10 @@ text-transform:uppercase;
 color:var(--text-dim);
 text-decoration:none;
 }
-.nav-links a:hover{color:var(--green-br)}
+
+.nav-links a:hover{
+color:var(--green-br);
+}
 
 .hero{
 min-height:100vh;
@@ -70,8 +75,9 @@ line-height:.9;
 
 .hero p{
 margin-top:20px;
-max-width:520px;
+max-width:550px;
 color:var(--text-dim);
+font-size:1.1rem;
 }
 
 .section{
@@ -82,31 +88,39 @@ border-top:1px solid var(--border);
 .section h2{
 font-size:3rem;
 color:var(--cream);
-margin-bottom:50px;
+margin-bottom:60px;
 }
 
-.mod-row,.bot-row{
+.project-row{
 display:grid;
-grid-template-columns:2fr 1fr 3fr 160px;
+grid-template-columns:2fr 1fr 3fr 180px;
 gap:20px;
-padding:25px 0;
+padding:28px 0;
 border-bottom:1px solid var(--border);
 align-items:center;
 }
 
-.mod-name,.bot-name{
-font-size:1.1rem;
+.project-name{
+font-size:1.15rem;
 color:var(--cream);
 }
 
-.mod-desc,.bot-desc{
-font-size:.9rem;
+.project-type{
+font-family:'Space Mono',monospace;
+font-size:.65rem;
+letter-spacing:2px;
+text-transform:uppercase;
+color:var(--text-dim);
+}
+
+.project-desc{
+font-size:.95rem;
 color:var(--text-dim);
 }
 
 .status{
 font-family:'Space Mono',monospace;
-font-size:.6rem;
+font-size:.65rem;
 padding:6px 10px;
 border-radius:3px;
 text-transform:uppercase;
@@ -117,10 +131,10 @@ display:inline-block;
 .status-active{background:rgba(92,184,95,.15);color:var(--green-br)}
 .status-released{background:rgba(120,120,120,.15);color:var(--text-dim)}
 .status-wip{background:rgba(212,168,67,.15);color:var(--accent)}
-.status-paused{background:rgba(200,80,80,.15);color:#ff6b6b}
+.status-paused{background:rgba(255,80,80,.15);color:var(--danger)}
 
 footer{
-padding:40px 120px;
+padding:50px 120px;
 border-top:1px solid var(--border);
 color:var(--text-dim);
 font-family:'Space Mono',monospace;
@@ -129,9 +143,9 @@ display:flex;
 justify-content:space-between;
 }
 
-@media(max-width:900px){
-.hero,.section{padding:100px 30px}
-.mod-row,.bot-row{grid-template-columns:1fr}
+@media(max-width:1000px){
+.hero,.section{padding:100px 40px}
+.project-row{grid-template-columns:1fr}
 }
 </style>
 </head>
@@ -141,8 +155,8 @@ justify-content:space-between;
 <nav>
 <div>Tison K.</div>
 <ul class="nav-links">
-<li><a href="#mods">Mods</a></li>
-<li><a href="#bots">Bots</a></li>
+<li><a href="#mods">FS25 Mods</a></li>
+<li><a href="#bots">Discord Bots</a></li>
 <li><a href="#github">GitHub</a></li>
 </ul>
 </nav>
@@ -150,109 +164,118 @@ justify-content:space-between;
 <section class="hero">
 <div>
 <h1>Tison K.</h1>
-<p>Systems Developer specializing in immersive Farming Simulator 25 gameplay systems and advanced Discord automation architecture.</p>
+<p>
+Systems developer focused on immersive Farming Simulator 25 gameplay systems and advanced Discord automation architecture.
+Building scalable mechanics, realistic simulation layers, and production-grade community tools.
+</p>
 </div>
 </section>
 
-<!-- FS25 MODS -->
+<!-- ================= FS25 MODS ================= -->
+
 <section class="section" id="mods">
-<h2>FS25 Systems</h2>
+<h2>FS25 Modding Systems</h2>
 
-<div class="mod-row">
-<div class="mod-name">FS25_NPCFavor</div>
-<div>FS25</div>
-<div class="mod-desc">Immersive NPC interaction mechanics introducing trust, progression, and meaningful relationship systems.</div>
+<div class="project-row">
+<div class="project-name">FS25_NPCFavor</div>
+<div class="project-type">FS25</div>
+<div class="project-desc">Immersive NPC interaction mechanics introducing trust systems, progression layers, and meaningful world engagement.</div>
 <div><span class="status status-active">Released · Active</span></div>
 </div>
 
-<div class="mod-row">
-<div class="mod-name">FS25_SoilFertilizer</div>
-<div>FS25</div>
-<div class="mod-desc">Advanced soil & nutrient simulation system tracking nitrogen, phosphorus, and organic matter.</div>
+<div class="project-row">
+<div class="project-name">FS25_SoilFertilizer</div>
+<div class="project-type">FS25</div>
+<div class="project-desc">Advanced soil & nutrient simulation tracking nitrogen balance, organic matter, and crop response behavior.</div>
 <div><span class="status status-active">Released · Active</span></div>
 </div>
 
-<div class="mod-row">
-<div class="mod-name">FS25_SeasonalCropStress</div>
-<div>FS25</div>
-<div class="mod-desc">Seasonal crop stress & irrigation manager affecting growth cycles and yield outcomes dynamically.</div>
+<div class="project-row">
+<div class="project-name">FS25_SeasonalCropStress</div>
+<div class="project-type">FS25</div>
+<div class="project-desc">Seasonal crop stress & irrigation manager dynamically affecting yield, hydration cycles, and environmental impact.</div>
 <div><span class="status status-wip">WIP · Active</span></div>
 </div>
 
-<div class="mod-row">
-<div class="mod-name">FS25_WorkerCosts</div>
-<div>FS25</div>
-<div class="mod-desc">Dynamic skill-based wage system introducing scalable worker efficiency and economy balancing.</div>
+<div class="project-row">
+<div class="project-name">FS25_WorkerCosts</div>
+<div class="project-type">FS25</div>
+<div class="project-desc">Dynamic skill-based wage system introducing scalable worker efficiency and deeper economic balancing.</div>
 <div><span class="status status-active">Released · Active</span></div>
 </div>
 
-<div class="mod-row">
-<div class="mod-name">FS25_IncomeMod</div>
-<div>FS25</div>
-<div class="mod-desc">Configurable economy balancing system allowing custom income curves and difficulty tuning.</div>
+<div class="project-row">
+<div class="project-name">FS25_IncomeMod</div>
+<div class="project-type">FS25</div>
+<div class="project-desc">Configurable economy balancing framework enabling custom financial progression and difficulty scaling.</div>
 <div><span class="status status-active">Released · Active</span></div>
 </div>
 
-<div class="mod-row">
-<div class="mod-name">FS25_RandomWorldEvents</div>
-<div>FS25</div>
-<div class="mod-desc">80+ dynamic world systems introducing environmental and economic unpredictability.</div>
+<div class="project-row">
+<div class="project-name">FS25_RandomWorldEvents</div>
+<div class="project-type">FS25</div>
+<div class="project-desc">80+ dynamic world systems introducing environmental unpredictability and immersive simulation depth.</div>
 <div><span class="status status-paused">Released · Paused</span></div>
 </div>
 
-<div class="mod-row">
-<div class="mod-name">FS25_FarmTablet</div>
-<div>FS25</div>
-<div class="mod-desc">In-game tablet management interface for streamlined farm statistics and system controls.</div>
+<div class="project-row">
+<div class="project-name">FS25_FarmTablet</div>
+<div class="project-type">FS25</div>
+<div class="project-desc">In-game farm tablet management interface providing statistics dashboards and streamlined control systems.</div>
 <div><span class="status status-paused">Released · Paused</span></div>
 </div>
 
 </section>
 
-<!-- DISCORD BOTS -->
+<!-- ================= DISCORD BOTS ================= -->
+
 <section class="section" id="bots">
 <h2>Discord Bot Systems</h2>
 
-<div class="bot-row">
-<div class="bot-name">GitBot</div>
-<div>Discord</div>
-<div class="bot-desc">Forwards GitHub events in real-time with structured embeds and repository filtering.</div>
+<div class="project-row">
+<div class="project-name">GitBot</div>
+<div class="project-type">Discord</div>
+<div class="project-desc">Real-time GitHub event forwarding system with structured embeds, repository tracking, and filtering tools.</div>
 <div><span class="status status-active">Released · Active</span></div>
 </div>
 
-<div class="bot-row">
-<div class="bot-name">ClaudeBot</div>
-<div>Discord</div>
-<div class="bot-desc">Dual-voice AI assistant bot designed for conversational depth and structured server integration.</div>
+<div class="project-row">
+<div class="project-name">ClaudeBot</div>
+<div class="project-type">Discord</div>
+<div class="project-desc">Dual-personality AI assistant built for Discord, offering adaptive conversational handling and server integration.</div>
 <div><span class="status status-active">Released · Active</span></div>
 </div>
 
-<div class="bot-row">
-<div class="bot-name">TicketBot</div>
-<div>Discord</div>
-<div class="bot-desc">Advanced ticket system used by the FS25 Modding Community with logging and moderation tools.</div>
+<div class="project-row">
+<div class="project-name">TicketBot</div>
+<div class="project-type">Discord</div>
+<div class="project-desc">Advanced ticket management bot used by the FS25 Modding Community with logging, workflows, and moderation controls.</div>
 <div><span class="status status-active">Released · Active</span></div>
 </div>
 
-<div class="bot-row">
-<div class="bot-name">ModBot</div>
-<div>Discord</div>
-<div class="bot-desc">Comprehensive moderation bot featuring case tracking, logging, and automation systems.</div>
+<div class="project-row">
+<div class="project-name">ModBot</div>
+<div class="project-type">Discord</div>
+<div class="project-desc">Comprehensive moderation system featuring automod, case tracking, structured logging, and admin utilities.</div>
 <div><span class="status status-active">Released · Active</span></div>
 </div>
 
 </section>
+
+<!-- ================= GITHUB ================= -->
 
 <section class="section" id="github">
 <h2>GitHub</h2>
 <p>All systems, releases, and development history are available publicly.</p>
 <br>
-<a href="https://github.com/TheCodingDad-TisonK" target="_blank" style="color:var(--green-br);font-family:'Space Mono',monospace;text-decoration:none;">View GitHub Profile →</a>
+<a href="https://github.com/TheCodingDad-TisonK" target="_blank" style="color:var(--green-br);font-family:'Space Mono',monospace;text-decoration:none;">
+View GitHub Profile →
+</a>
 </section>
 
 <footer>
 <div>© 2026 Tison K.</div>
-<div>Immersion first · Performance always</div>
+<div>Immersion First · Systems Driven · Performance Focused</div>
 </footer>
 
 </body>
