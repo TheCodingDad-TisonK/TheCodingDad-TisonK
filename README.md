@@ -7,133 +7,98 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&pause=1200&color=2E7D32&center=true&vCenter=true&width=700&lines=Farming+Simulator+Hobbiest+Developer;Lua+Gameplay+Modder;Realism+Focused+Mod+Architect;Performance-Optimized+Game+Systems" />
-</p>
-
-<br>
-
-<!-- ====================== BADGES =========================== -->
-
-<p align="center">
-  <a href="https://thecodingdad-tisonk.github.io/TheCodingDad-TisonK/">
-    <img src="https://img.shields.io/badge/About%20me-2e7d32?style=for-the-badge&logo=github&logoColor=white" />
-  </a>
-  <a href="https://thecodingdad-tisonk.github.io/TheCodingDad-TisonK/">
-    <img src="https://komarev.com/ghpvc/?username=TheCodingDad-TisonK&style=for-the-badge&color=2e7d32&logo=eye&label=Profile+Views" />
-  </a>
-</p>
-<p align="center">
-  <a href="https://github.com/TheCodingDad-TisonK?tab=repositories">
-    <img src="https://img.shields.io/badge/Repositories-Show%20Me-2e7d32?style=for-the-badge&logo=github&logoColor=white" />
-  </a>
-  <a href="https://www.kingmods.net/nl/profile/tisonk?tab=mods">
-    <img src="https://img.shields.io/badge/KingMods-Published%20Mods-2e7d32?style=for-the-badge&logo=modrinth&logoColor=white" />
-  </a>
-  <a href="https://discord.gg/sJyKJCJh">
-    <img src="https://img.shields.io/badge/Discord-Join%20Community-2e7d32?style=for-the-badge&logo=discord&logoColor=white" />
-  </a>
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&pause=1200&color=2E7D32&center=true&vCenter=true&width=700&lines=Farming+Simulator+Systems+Developer;Lua+Gameplay+Architect;Realism+Driven+Mod+Engineering;Performance-First+Game+Design" />
 </p>
 
 ---
 
-# 🌾 Hobby Developer • Gameplay Modder
+# 🌾 Systems Developer • Mod Architect
 
-I'm **Tison**, a hobby developer focused on immersive, realistic, and performance-optimized gameplay mechanics.
+I'm **Tison**, a 24-year-old Farming Simulator systems developer from the Netherlands.
 
-I build systems that:
+I build immersive gameplay systems that:
 
-- Integrate naturally into base game logic  
-- Enhance realism without unnecessary complexity  
-- Prioritize performance and long-term stability  
+- Integrate seamlessly into base game logic  
+- Enhance realism without artificial complexity  
+- Prioritize performance and stability  
 - Follow modular, maintainable Lua architecture  
 
-> _Immersion first. Performance always._
+> **Immersion first. Performance always.**
 
 ---
 
-# 🚜 Core Expertise
+# 🚜 FS25 — Current Generation Systems
 
-## 🌱 Gameplay Systems
-- Soil & nutrient simulations  
-- Economic balancing models  
-- Worker AI cost frameworks  
-- Dynamic environmental events  
-
-## 🧑‍💻 Lua Engineering
-- Lightweight scripting  
-- Modular architecture  
-- Optimization & profiling  
-- Scalable system design  
+| Mod | Description | Status |
+|------|-------------|--------|
+| **FS25_SoilFertilizer** | Full soil chemistry & nutrient lifecycle simulation | Active |
+| **FS25_WorkerCosts** | Skill-based worker wage & progression framework | Active |
+| **FS25_SeasonalCropStress** | Seasonal crop stress & environmental pressure system | Active |
+| **FS25_NPCFavor** | Reputation-driven NPC interaction mechanics | Beta |
+| **FS25_IncomeMod** | Configurable income & economic balancing system | Active |
+| **FS25_RealisticAnimalNames** | Immersive livestock naming & floating name system | Released |
 
 ---
 
-# 🚀 Highlighted Mods
+# 🌾 FS22 — Legacy Systems (Still Maintained)
 
-| System | Description |
-|--------|-------------|
-| **FS25_SoilFertilizer** | Advanced soil & nutrient simulation |
-| **FS25_WorkerCosts** | Dynamic skill-based wage system |
-| **FS25_NPCFavor** | Immersive NPC interaction mechanics |
-| **FS22_RandomWorldEvents** | 80+ dynamic world systems |
-| **FS22_FarmTablet** | In-game tablet management interface |
-| **FS22_IncomeMod** | Configurable economy balancing |
-
-<p align="center">
-  <a href="https://github.com/TheCodingDad-TisonK?tab=repositories">
-    <b>Explore all mods →</b>
-  </a>
-</p>
+| Mod | Description | Status |
+|------|-------------|--------|
+| **FS22_RandomWorldEvents** | 80+ dynamic environmental & economic events | Released |
+| **FS22_AdvancedFarmLogistics** | Supply chain & AI routing systems | Maintained |
+| **FS22_TaxMod** | Realistic farm taxation system | Maintained |
+| **FS22_FarmTablet** | Diegetic in-game management tablet UI | Released |
+| **FS22_AutoIrrigation** | Automated irrigation management | Released |
+| **FS22_IncomeMod** | Configurable income balancing | Released |
 
 ---
 
-# 📊 GitHub Analytics
+# 🤖 Community & Tooling Projects
 
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=TheCodingDad-TisonK&theme=dark&ring=2E7D32&fire=2E7D32&currStreakLabel=2E7D32&background=111111" />
-</p>
+While Farming Simulator is my core focus, I also build infrastructure tools:
 
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=TheCodingDad-TisonK&theme=github_dark" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=TheCodingDad-TisonK&theme=github_dark" />
-</p>
+- **ModBot** — Discord moderation suite  
+- **TicketBot** — Advanced ticketing system with logging  
+- **GitBot** — GitHub → Discord webhook forwarder  
+- **ClaudeBot** — Personality-based AI Discord bot  
 
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=TheCodingDad-TisonK&theme=github_dark" />
-</p>
-
----
-
-# 📈 Contribution Graph
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=TheCodingDad-TisonK&theme=github-dark&color=2E7D32&line=2E7D32&point=ffffff&area=true&hide_border=true" />
-</p>
+All follow the same engineering principles:
+- Clean architecture  
+- Modular structure  
+- Long-term maintainability  
 
 ---
 
-# 🧠 Continuous Improvement
+# 🧠 Engineering Philosophy
 
-- Advanced Lua performance optimization  
-- Farming Simulator 25 systems design  
-- Scalable gameplay architecture  
-- Realistic economic modeling  
+**The best mod is the one you forget is a mod.**
+
+Systems should feel native.  
+Complexity must earn its place.  
+Performance is non-negotiable.
+
+---
+
+# 📊 Scope (2026)
+
+- 15+ Public Repositories  
+- 12+ Core Gameplay Systems  
+- Active FS25 Development  
+- Legacy FS22 Ecosystem  
+- Lua + JavaScript Engineering  
 
 ---
 
 # 👨‍👧‍👦 Beyond Development
 
-- Im a proud dad (24) with a lovely daughter and a beautyfull girlfriend <3.
-- Lifelong learner, I learn alot from our human species.
-- Builder of immersive farming systems, Not just basic scripting...
+Proud dad at 24.  
+Builder of immersive farming systems.  
+Lifelong student of how systems work — in code, in economics, in nature.
 
-I build for passion, long-term quality, and immersive gameplay depth.
+I build for passion and long-term quality.
 
 ---
 
 <p align="center">
   🌾 Crafted for Farming Simulator realism
-</p>
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2e7d32,100:111111&height=110&section=footer"/>
 </p>
