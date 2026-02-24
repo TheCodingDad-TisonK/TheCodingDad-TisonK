@@ -6,20 +6,8 @@
 <title>Tison K — Systems Developer</title>
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;0,800;1,400;1,600&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"/>
 <style>
-/* ── RESET ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
-body {
-  background: #080e09;
-  color: #dde8dd;
-  font-family: 'EB Garamond', Georgia, serif;
-  font-size: 18px;
-  line-height: 1.75;
-  min-height: 100vh;
-  overflow-x: hidden;
-}
 
-/* ── VARIABLES ── */
 :root {
   --bg:        #080e09;
   --bg2:       #0d1510;
@@ -38,6 +26,18 @@ body {
   --text-dim:  #7a9e7c;
   --accent:    #d4a843;
   --accent2:   #8b6914;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 18px;
+  line-height: 1.75;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
 /* ── NOISE OVERLAY ── */
@@ -109,6 +109,8 @@ nav {
   position: relative;
   overflow: hidden;
 }
+
+/* large decorative background text */
 .hero-bg-text {
   position: absolute;
   right: -40px;
@@ -120,14 +122,15 @@ nav {
   line-height: 1;
   color: transparent;
   -webkit-text-stroke: 1px var(--green-dk);
-  text-shadow: 0 0 2px var(--green-dk);
   user-select: none;
   pointer-events: none;
   z-index: 0;
   white-space: nowrap;
   opacity: 0.5;
 }
+
 .hero-content { position: relative; z-index: 1; max-width: 720px; }
+
 .hero-label {
   font-family: 'Space Mono', monospace;
   font-size: 0.62rem;
@@ -146,6 +149,7 @@ nav {
   height: 1px;
   background: var(--green-br);
 }
+
 .hero-name {
   font-family: 'EB Garamond', serif;
   font-size: clamp(3.5rem, 8vw, 7rem);
@@ -155,7 +159,11 @@ nav {
   letter-spacing: -2px;
   margin-bottom: 16px;
 }
-.hero-name em { font-style: italic; color: var(--green-br); }
+.hero-name em {
+  font-style: italic;
+  color: var(--green-br);
+}
+
 .hero-title {
   font-family: 'EB Garamond', serif;
   font-size: 1.4rem;
@@ -164,6 +172,7 @@ nav {
   margin-bottom: 40px;
   font-weight: 400;
 }
+
 .hero-manifesto {
   font-size: 1.05rem;
   color: var(--text-dim);
@@ -174,12 +183,16 @@ nav {
   margin-bottom: 48px;
 }
 .hero-manifesto strong { color: var(--cream); font-weight: 600; }
+
 .hero-stats {
   display: flex;
   gap: 48px;
   flex-wrap: wrap;
 }
-.stat { display: flex; flex-direction: column; }
+.stat {
+  display: flex;
+  flex-direction: column;
+}
 .stat-num {
   font-family: 'EB Garamond', serif;
   font-size: 2.8rem;
@@ -221,19 +234,22 @@ nav {
 }
 @keyframes nudge {
   0%,100% { opacity: 0.4; transform: translateY(0); }
-  50% { opacity: 1; transform: translateY(6px); }
+  50%      { opacity: 1;   transform: translateY(6px); }
 }
 
 /* ── MAIN ── */
-main { position: relative; z-index: 1; }
+main {
+  position: relative;
+  z-index: 1;
+}
 
-/* ── SECTION ── */
+/* ── SECTION BASE ── */
 .section {
   padding: 100px 64px 100px 120px;
   border-top: 1px solid var(--border);
   max-width: 1100px;
-  margin: 0 auto;
 }
+
 .section-head {
   display: flex;
   align-items: baseline;
@@ -256,19 +272,76 @@ main { position: relative; z-index: 1; }
   letter-spacing: -1px;
 }
 
-/* ── ABOUT ── */
-.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
-.about-lead { font-size: 1.25rem; line-height: 1.7; color: var(--text); margin-bottom: 24px; }
-.about-lead em { font-style: italic; color: var(--green-br); }
-.about-body { font-size: 1rem; color: var(--text-dim); line-height: 1.85; margin-bottom: 20px; }
-.about-aside { background: var(--surface); border: 1px solid var(--border2); border-radius: 2px; padding: 36px; position: relative; }
-.about-aside::before { content: '"'; position: absolute; top: -20px; left: 28px; font-family: 'EB Garamond', serif; font-size: 5rem; color: var(--green); line-height: 1; }
-.about-quote { font-size: 1.15rem; font-style: italic; color: var(--cream-dk); line-height: 1.7; margin-bottom: 20px; padding-top: 16px; }
-.about-facts { list-style: none; display: flex; flex-direction: column; gap: 12px; margin-top: 24px; }
-.about-facts li { display: flex; align-items: baseline; gap: 12px; font-family: 'Space Mono', monospace; font-size: 0.72rem; color: var(--text-dim); }
-.about-facts li::before { content: '→'; color: var(--green-br); flex-shrink: 0; }
+/* ── ABOUT SECTION ── */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: start;
+}
+.about-lead {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  color: var(--text);
+  margin-bottom: 24px;
+}
+.about-lead em {
+  font-style: italic;
+  color: var(--green-br);
+}
+.about-body {
+  font-size: 1rem;
+  color: var(--text-dim);
+  line-height: 1.85;
+  margin-bottom: 20px;
+}
+.about-aside {
+  background: var(--surface);
+  border: 1px solid var(--border2);
+  border-radius: 2px;
+  padding: 36px;
+  position: relative;
+}
+.about-aside::before {
+  content: '"';
+  position: absolute;
+  top: -20px;
+  left: 28px;
+  font-family: 'EB Garamond', serif;
+  font-size: 5rem;
+  color: var(--green);
+  line-height: 1;
+}
+.about-quote {
+  font-size: 1.15rem;
+  font-style: italic;
+  color: var(--cream-dk);
+  line-height: 1.7;
+  margin-bottom: 20px;
+  padding-top: 16px;
+}
+.about-facts {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 24px;
+}
+.about-facts li {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--text-dim);
+}
+.about-facts li::before {
+  content: '→';
+  color: var(--green-br);
+  flex-shrink: 0;
+}
 
-/* ── PHILOSOPHY ── */
+/* ── PHILOSOPHY STRIP ── */
 .philosophy {
   background: var(--surface);
   border-top: 1px solid var(--border2);
@@ -278,15 +351,38 @@ main { position: relative; z-index: 1; }
   grid-template-columns: repeat(3, 1fr);
   gap: 1px;
 }
-.philo-item { padding: 0 40px 0 0; border-right: 1px solid var(--border2); }
+.philo-item {
+  padding: 0 40px 0 0;
+  border-right: 1px solid var(--border2);
+}
 .philo-item:last-child { border-right: none; padding-right: 0; padding-left: 40px; }
 .philo-item:nth-child(2) { padding-left: 40px; }
-.philo-num { font-family: 'Space Mono', monospace; font-size: 0.55rem; letter-spacing: 3px; color: var(--green-md); margin-bottom: 12px; }
-.philo-title { font-family: 'EB Garamond', serif; font-size: 1.5rem; font-weight: 800; color: var(--cream); margin-bottom: 10px; }
-.philo-body { font-size: 0.9rem; color: var(--text-dim); line-height: 1.7; }
+.philo-num {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.55rem;
+  letter-spacing: 3px;
+  color: var(--green-md);
+  margin-bottom: 12px;
+}
+.philo-title {
+  font-family: 'EB Garamond', serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--cream);
+  margin-bottom: 10px;
+}
+.philo-body {
+  font-size: 0.9rem;
+  color: var(--text-dim);
+  line-height: 1.7;
+}
 
 /* ── EXPERTISE ── */
-.expertise-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
+.expertise-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+}
 .exp-card {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -307,14 +403,46 @@ main { position: relative; z-index: 1; }
 }
 .exp-card:hover { background: var(--surface2); border-color: var(--border2); }
 .exp-card:hover::after { transform: scaleX(1); }
-.exp-icon { font-size: 1.6rem; margin-bottom: 16px; display: block; }
-.exp-name { font-family: 'EB Garamond', serif; font-size: 1.4rem; font-weight: 800; color: var(--cream); margin-bottom: 16px; }
-.exp-list { list-style: none; display: flex; flex-direction: column; gap: 8px; }
-.exp-list li { font-family: 'Space Mono', monospace; font-size: 0.68rem; color: var(--text-dim); display: flex; align-items: baseline; gap: 10px; }
-.exp-list li::before { content: '▸'; color: var(--green-br); font-size: 0.6rem; flex-shrink: 0; }
+.exp-icon {
+  font-size: 1.6rem;
+  margin-bottom: 16px;
+  display: block;
+}
+.exp-name {
+  font-family: 'EB Garamond', serif;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--cream);
+  margin-bottom: 16px;
+}
+.exp-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.exp-list li {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.68rem;
+  color: var(--text-dim);
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+.exp-list li::before {
+  content: '▸';
+  color: var(--green-br);
+  font-size: 0.6rem;
+  flex-shrink: 0;
+}
 
 /* ── MODS ── */
-.mod-list { display: flex; flex-direction: column; gap: 1px; }
+.mod-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
 .mod-row {
   display: grid;
   grid-template-columns: 2fr 1fr 3fr 120px;
@@ -322,14 +450,29 @@ main { position: relative; z-index: 1; }
   gap: 32px;
   padding: 28px 0;
   border-bottom: 1px solid var(--border);
-  transition: background 0.15s, padding 0.15s;
+  transition: background 0.15s;
   cursor: default;
 }
 .mod-row:first-child { border-top: 1px solid var(--border); }
 .mod-row:hover { background: var(--surface); padding-left: 12px; padding-right: 12px; margin: 0 -12px; }
-.mod-name { font-family: 'EB Garamond', serif; font-size: 1.15rem; font-weight: 600; color: var(--cream); }
-.mod-game { font-family: 'Space Mono', monospace; font-size: 0.6rem; color: var(--green-md); letter-spacing: 2px; }
-.mod-desc { font-size: 0.9rem; color: var(--text-dim); line-height: 1.5; }
+
+.mod-name {
+  font-family: 'EB Garamond', serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--cream);
+}
+.mod-game {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.6rem;
+  color: var(--green-md);
+  letter-spacing: 2px;
+}
+.mod-desc {
+  font-size: 0.9rem;
+  color: var(--text-dim);
+  line-height: 1.5;
+}
 .mod-status {
   display: inline-flex;
   align-items: center;
@@ -345,6 +488,8 @@ main { position: relative; z-index: 1; }
 .status-active   { background: rgba(93,184,95,0.1);  color: var(--green-br); border: 1px solid rgba(93,184,95,0.25); }
 .status-beta     { background: rgba(212,168,67,0.1); color: var(--accent);   border: 1px solid rgba(212,168,67,0.25); }
 .status-released { background: rgba(100,120,100,0.1); color: #7a9e7c;        border: 1px solid rgba(100,120,100,0.2); }
+
+/* status dot */
 .mod-status::before {
   content: '';
   width: 5px; height: 5px;
@@ -354,222 +499,725 @@ main { position: relative; z-index: 1; }
 .status-active::before   { background: var(--green-br); box-shadow: 0 0 6px var(--green-br); animation: pulse 2s infinite; }
 .status-beta::before     { background: var(--accent); }
 .status-released::before { background: #7a9e7c; }
-@keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.4; } }
+@keyframes pulse {
+  0%,100% { opacity: 1; } 50% { opacity: 0.4; }
+}
 
 /* ── CODE BLOCK ── */
-.code-showcase { background: #050a06; border: 1px solid var(--border2); border-radius: 3px; overflow: hidden; margin-top: 40px; }
-.code-header { display: flex; align-items: center; justify-content: space-between; padding: 14px 24px; border-bottom: 1px solid var(--border); background: var(--surface); }
+.code-showcase {
+  background: #050a06;
+  border: 1px solid var(--border2);
+  border-radius: 3px;
+  overflow: hidden;
+  margin-top: 40px;
+}
+.code-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 24px;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+}
 .code-dots { display: flex; gap: 7px; }
 .code-dot { width: 10px; height: 10px; border-radius: 50%; }
 .code-dot:nth-child(1) { background: #ff5f57; }
 .code-dot:nth-child(2) { background: #febc2e; }
 .code-dot:nth-child(3) { background: #28c840; }
-.code-filename { font-family: 'Space Mono', monospace; font-size: 0.7rem; color: var(--text-dim); }
-.code-body { padding: 24px; font-family: 'Space Mono', monospace; font-size: 0.85rem; color: var(--text); overflow-x: auto; }
+.code-filename {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.62rem;
+  color: var(--text-dim);
+  letter-spacing: 1px;
+}
+.code-body {
+  padding: 32px;
+  overflow-x: auto;
+}
+.code-body pre {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.72rem;
+  line-height: 1.9;
+  color: #c9d9c9;
+  tab-size: 2;
+}
+.c-comment  { color: #4a6e4c; font-style: italic; }
+.c-keyword  { color: #7fb3e0; }
+.c-fn       { color: #c9c56b; }
+.c-string   { color: #cc8c6a; }
+.c-var      { color: #a0d0a2; }
+.c-num      { color: #d4a843; }
+.c-self     { color: #c86f6f; }
 
-/* ── FILTER BUTTONS ── */
-.filter-btn { font-family: 'Space Mono', monospace; font-size: 0.58rem; text-transform: uppercase; letter-spacing: 2px; padding: 6px 16px; border: 1px solid var(--border2); border-radius: 2px; background: var(--surface); color: var(--text-dim); cursor: pointer; transition: background 0.2s, color 0.2s, border-color 0.2s; }
-.filter-btn:hover { background: var(--green-dk); color: var(--cream); border-color: var(--green-br); }
-.filter-btn.active { background: var(--green-dk); border-color: var(--green-br); color: var(--cream); }
+/* ── STACK ── */
+.stack-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  margin-top: 8px;
+}
+.stack-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: border-color 0.2s;
+}
+.stack-item:hover { border-color: var(--green); }
+.stack-label {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+.stack-name {
+  font-family: 'EB Garamond', serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--cream);
+}
+.stack-note {
+  font-size: 0.82rem;
+  color: var(--text-dim);
+  font-style: italic;
+}
 
-/* ── FADE-IN ── */
-.fade-in { opacity: 0; transform: translateY(40px); transition: opacity 0.8s ease, transform 0.8s ease; }
-.fade-in.visible { opacity: 1; transform: translateY(0); }
+/* ── PERSONAL ── */
+.personal-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+}
+.personal-block {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.personal-entry {
+  border-left: 2px solid var(--border2);
+  padding-left: 24px;
+  transition: border-color 0.2s;
+}
+.personal-entry:hover { border-color: var(--green); }
+.personal-entry-label {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.58rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--green-md);
+  margin-bottom: 6px;
+}
+.personal-entry-text {
+  font-size: 1rem;
+  color: var(--text-dim);
+  line-height: 1.7;
+}
+.personal-entry-text strong { color: var(--cream); }
 
-/* ── MEDIA ── */
+.big-quote {
+  padding: 48px;
+  background: var(--surface);
+  border: 1px solid var(--border2);
+  border-left: 4px solid var(--green);
+  position: relative;
+}
+.big-quote-text {
+  font-family: 'EB Garamond', serif;
+  font-size: 1.5rem;
+  font-style: italic;
+  color: var(--cream-dk);
+  line-height: 1.6;
+}
+
+/* ── GITHUB LINK ── */
+.github-link-section {
+  padding: 80px 120px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+}
+.github-link-text {
+  font-family: 'EB Garamond', serif;
+  font-size: 1.4rem;
+  font-style: italic;
+  color: var(--text-dim);
+  max-width: 420px;
+}
+.github-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 36px;
+  background: transparent;
+  border: 1px solid var(--green-md);
+  color: var(--green-br);
+  font-family: 'Space Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+.github-btn:hover {
+  background: var(--green-dk);
+  border-color: var(--green-br);
+  color: var(--cream);
+}
+.github-btn svg {
+  width: 16px; height: 16px;
+  fill: currentColor;
+}
+
+/* ── FOOTER ── */
+footer {
+  background: var(--bg2);
+  border-top: 1px solid var(--border);
+  padding: 36px 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-sig {
+  font-family: 'EB Garamond', serif;
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--text-dim);
+}
+.footer-motto {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.58rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--green-md);
+}
+
+/* ── ANIMATIONS ── */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── RESPONSIVE ── */
 @media (max-width: 900px) {
-  .about-grid { grid-template-columns: 1fr; }
-  .hero { padding: 120px 32px 80px 32px; }
-  .hero-bg-text { font-size: clamp(80px, 25vw, 180px); right: -20px; }
-  .hero-stats { flex-direction: column; gap: 24px; }
-  .philosophy { grid-template-columns: 1fr; gap: 40px; }
-  .expertise-grid { grid-template-columns: 1fr; gap: 16px; }
-  .mod-row { grid-template-columns: 1fr; gap: 12px; }
-  .scroll-cue { left: 32px; bottom: 20px; }
+  .v-rule { display: none; }
+  .hero, .section { padding-left: 32px; padding-right: 32px; }
+  .section { padding-left: 32px; padding-right: 32px; }
+  .about-grid, .personal-grid { grid-template-columns: 1fr; }
+  .philosophy { grid-template-columns: 1fr; padding: 48px 32px; }
+  .philo-item { border-right: none; padding: 0 0 32px; border-bottom: 1px solid var(--border2); }
+  .philo-item:last-child { border-bottom: none; padding-left: 0; }
+  .philo-item:nth-child(2) { padding-left: 0; }
+  .expertise-grid { grid-template-columns: 1fr; }
+  .mod-row { grid-template-columns: 1fr; gap: 8px; }
+  .stack-grid { grid-template-columns: 1fr 1fr; }
+  .github-link-section { flex-direction: column; padding: 48px 32px; }
+  footer { flex-direction: column; gap: 12px; text-align: center; padding: 32px; }
+  nav { padding: 16px 32px; }
+  .nav-links { gap: 20px; }
+  .scroll-cue { left: 32px; }
 }
 </style>
 </head>
 <body>
 
 <div class="v-rule"></div>
+
+<!-- NAV -->
 <nav>
-  <div class="nav-sig">Tison K</div>
+  <span class="nav-sig">Tison K.</span>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
-    <li><a href="#philosophy">Philosophy</a></li>
     <li><a href="#expertise">Expertise</a></li>
     <li><a href="#mods">Mods</a></li>
+    <li><a href="#bots">Bots</a></li>
+    <li><a href="#stack">Stack</a></li>
+    <li><a href="#personal">Personal</a></li>
   </ul>
 </nav>
 
+<!-- HERO -->
 <section class="hero">
-  <div class="hero-bg-text">TISON</div>
+  <div class="hero-bg-text">FS25</div>
   <div class="hero-content">
-    <div class="hero-label">Systems Developer</div>
-    <h1 class="hero-name">Tison <em>K</em></h1>
-    <div class="hero-title">Building Efficient Digital Worlds</div>
-    <div class="hero-manifesto"><strong>Focused</strong> on clean design, <strong>optimized</strong> performance, and <strong>innovative</strong> solutions.</div>
+    <div class="hero-label">Mod Developer · Bot Creator</div>
+    <h1 class="hero-name">
+      Tison<br><em>K.</em>
+    </h1>
+    <p class="hero-title">Building realism into every field, every farm, every season.</p>
+    <p class="hero-manifesto">
+      I don't add features for the sake of features.<br>
+      I build systems that <strong>feel</strong> like they were always there —<br>
+      woven into the game, not bolted on top of it.
+    </p>
     <div class="hero-stats">
-      <div class="stat"><div class="stat-num">120+</div><div class="stat-label">Projects</div></div>
-      <div class="stat"><div class="stat-num">50+</div><div class="stat-label">Clients</div></div>
-      <div class="stat"><div class="stat-num">10</div><div class="stat-label">Years Exp</div></div>
+      <div class="stat">
+        <span class="stat-num">6+</span>
+        <span class="stat-label">Published Mods</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">80+</span>
+        <span class="stat-label">World Event Systems</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">FS25</span>
+        <span class="stat-label">& FS22</span>
+      </div>
     </div>
   </div>
   <div class="scroll-cue">Scroll</div>
 </section>
 
 <main>
-  <!-- About Section -->
-  <section id="about" class="section fade-in">
-    <div class="section-head">
-      <div class="section-num">01</div>
-      <h2 class="section-title">About</h2>
-    </div>
-    <div class="about-grid">
-      <div>
-        <p class="about-lead">I am a <em>systems developer</em> passionate about creating <strong>efficient</strong> and <strong>scalable</strong> solutions.</p>
-        <p class="about-body">With experience across multiple platforms and technologies, I strive for clarity and maintainability in every project.</p>
-      </div>
-      <aside class="about-aside fade-in">
-        <p class="about-quote">"Simplicity is the ultimate sophistication."</p>
-        <ul class="about-facts">
-          <li>Location: Global</li>
-          <li>Specialties: Backend & Frontend</li>
-          <li>Languages: Python, JavaScript, SQL</li>
-        </ul>
-      </aside>
-    </div>
-  </section>
 
-  <!-- Philosophy Section -->
-  <section id="philosophy" class="section fade-in">
-    <div class="section-head">
-      <div class="section-num">02</div>
-      <h2 class="section-title">Philosophy</h2>
+<!-- ABOUT -->
+<section class="section fade-in" id="about">
+  <div class="section-head">
+    <span class="section-num">01</span>
+    <h2 class="section-title">Who I am</h2>
+  </div>
+  <div class="about-grid">
+    <div>
+      <p class="about-lead">
+        I'm <em>Tison</em> — a 24-year-old Farming Simulator mod developer from the Netherlands,
+        building systems that breathe life into virtual soil.
+      </p>
+      <p class="about-body">
+        What started as a love for farming games became something more disciplined: a practice of Lua engineering,
+        realism design, and long-term architecture. I don't ship quick scripts. I design systems that stand up
+        to hundreds of hours of gameplay — modular, maintainable, and quietly invisible to the player.
+      </p>
+      <p class="about-body">
+        The best mod is the one you forget is a mod. It just feels like the game was always this way.
+        That's the standard I hold myself to.
+      </p>
+      <ul class="about-facts">
+        <li>Farming Simulator systems developer</li>
+        <li>Focused on FS25 &amp; FS22 ecosystems</li>
+        <li>Lua as primary engineering language</li>
+        <li>Realism, performance, and modularity first</li>
+        <li>Dad, builder, lifelong learner</li>
+      </ul>
     </div>
-    <div class="philosophy">
-      <div class="philo-item">
-        <div class="philo-num">01</div>
-        <div class="philo-title">Efficiency</div>
-        <p class="philo-body">I prioritize solutions that are fast, reliable, and scalable.</p>
-      </div>
-      <div class="philo-item">
-        <div class="philo-num">02</div>
-        <div class="philo-title">Clarity</div>
-        <p class="philo-body">Code should be readable, maintainable, and intuitive.</p>
-      </div>
-      <div class="philo-item">
-        <div class="philo-num">03</div>
-        <div class="philo-title">Innovation</div>
-        <p class="philo-body">Constantly exploring new technologies and approaches.</p>
-      </div>
+    <div class="about-aside">
+      <p class="about-quote">
+        Immersion first. Performance always.
+        Complexity only when it earns its place.
+      </p>
+      <p class="about-body" style="margin-top:16px">
+        Every system I ship is built around these three principles.
+        They're not just design rules — they're a mindset that shapes
+        how I approach every function, every file, every release.
+      </p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Expertise Section -->
-  <section id="expertise" class="section fade-in">
-    <div class="section-head">
-      <div class="section-num">03</div>
-      <h2 class="section-title">Expertise</h2>
-    </div>
-    <div class="expertise-grid">
-      <div class="exp-card fade-in">
-        <span class="exp-icon">💻</span>
-        <div class="exp-name">Backend Dev</div>
-        <ul class="exp-list">
-          <li>Python / Django</li>
-          <li>Node.js / Express</li>
-          <li>REST APIs & GraphQL</li>
-        </ul>
-      </div>
-      <div class="exp-card fade-in">
-        <span class="exp-icon">🎨</span>
-        <div class="exp-name">Frontend Dev</div>
-        <ul class="exp-list">
-          <li>React / Vue</li>
-          <li>HTML / CSS / JS</li>
-          <li>Responsive Design</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+<!-- PHILOSOPHY STRIP -->
+<div class="philosophy">
+  <div class="philo-item fade-in">
+    <div class="philo-num">Principle I</div>
+    <div class="philo-title">Immersion First</div>
+    <p class="philo-body">Systems should integrate seamlessly. If a player notices the mod more than the gameplay, it has failed its purpose.</p>
+  </div>
+  <div class="philo-item fade-in">
+    <div class="philo-num">Principle II</div>
+    <div class="philo-title">Performance Always</div>
+    <p class="philo-body">Realism is worthless if it costs frame rate. Every loop, every table, every timer is profiled and questioned before it ships.</p>
+  </div>
+  <div class="philo-item fade-in">
+    <div class="philo-num">Principle III</div>
+    <div class="philo-title">Earned Complexity</div>
+    <p class="philo-body">No feature earns its place just by existing. Complexity must justify itself through genuine gameplay depth — or it gets cut.</p>
+  </div>
+</div>
 
-  <!-- Mods Section -->
-  <section id="mods" class="section fade-in">
-    <div class="section-head">
-      <div class="section-num">04</div>
-      <h2 class="section-title">Mods</h2>
+<!-- EXPERTISE -->
+<section class="section fade-in" id="expertise">
+  <div class="section-head">
+    <span class="section-num">02</span>
+    <h2 class="section-title">What I build</h2>
+  </div>
+  <div class="expertise-grid">
+    <div class="exp-card">
+      <span class="exp-icon">🌱</span>
+      <div class="exp-name">Gameplay Systems</div>
+      <ul class="exp-list">
+        <li>Soil chemistry &amp; nutrient simulation</li>
+        <li>Seasonal organic matter decay</li>
+        <li>Field compaction &amp; tillage history</li>
+        <li>Dynamic economic balancing models</li>
+        <li>Procedural environmental events</li>
+        <li>Save-game persistent state management</li>
+      </ul>
     </div>
-    <div style="margin-bottom: 32px;">
-      <button class="filter-btn" data-game="all">All Games</button>
-      <button class="filter-btn" data-game="game1">Game 1</button>
-      <button class="filter-btn" data-game="game2">Game 2</button>
-      <button class="filter-btn" data-status="active">Active</button>
-      <button class="filter-btn" data-status="beta">Beta</button>
-      <button class="filter-btn" data-status="released">Released</button>
+    <div class="exp-card">
+      <span class="exp-icon">⚙️</span>
+      <div class="exp-name">Lua Engineering</div>
+      <ul class="exp-list">
+        <li>Lightweight, modular scripting architecture</li>
+        <li>Performance profiling &amp; optimization</li>
+        <li>Scalable event-driven systems</li>
+        <li>Clean separation of concerns</li>
+        <li>Base game integration without overwrites</li>
+        <li>Long-term maintainability</li>
+      </ul>
     </div>
-    <div class="mod-list">
-      <div class="mod-row fade-in" data-game="game1" data-status="active">
-        <div class="mod-name">Mod Alpha</div>
-        <div class="mod-game">Game 1</div>
-        <div class="mod-desc">Adds new functionality to the base game.</div>
-        <div class="mod-status status-active">Active</div>
-      </div>
-      <div class="mod-row fade-in" data-game="game2" data-status="beta">
-        <div class="mod-name">Mod Beta</div>
-        <div class="mod-game">Game 2</div>
-        <div class="mod-desc">Experimental mod with new mechanics.</div>
-        <div class="mod-status status-beta">Beta</div>
-      </div>
-      <div class="mod-row fade-in" data-game="game1" data-status="released">
-        <div class="mod-name">Mod Gamma</div>
-        <div class="mod-game">Game 1</div>
-        <div class="mod-desc">Stable release, fully integrated features.</div>
-        <div class="mod-status status-released">Released</div>
-      </div>
+    <div class="exp-card">
+      <span class="exp-icon">👷</span>
+      <div class="exp-name">Worker & AI Systems</div>
+      <ul class="exp-list">
+        <li>Skill-based wage &amp; hiring frameworks</li>
+        <li>Dynamic worker cost modelling</li>
+        <li>NPC relationship mechanics</li>
+        <li>Favor &amp; reputation systems</li>
+        <li>AI cost-balancing over time</li>
+      </ul>
     </div>
-  </section>
-</main>
+    <div class="exp-card">
+      <span class="exp-icon">📊</span>
+      <div class="exp-name">Economy & UI</div>
+      <ul class="exp-list">
+        <li>Configurable income &amp; economy balancing</li>
+        <li>In-game tablet UI systems</li>
+        <li>Farm management interfaces</li>
+        <li>Real-time data display inside game</li>
+        <li>XML-driven configuration layers</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
+<!-- MODS -->
+<section class="section fade-in" id="mods">
+  <div class="section-head">
+    <span class="section-num">03</span>
+    <h2 class="section-title">The mods</h2>
+  </div>
+
+  <!-- Filter buttons -->
+  <div class="mod-filters" style="margin-bottom:20px; display:flex; gap:12px; flex-wrap:wrap;">
+    <button class="filter-btn" data-game="all">All Games</button>
+    <button class="filter-btn" data-game="FS25">FS25</button>
+    <button class="filter-btn" data-game="FS22">FS22</button>
+    <button class="filter-btn" data-status="all">All Statuses</button>
+    <button class="filter-btn" data-status="Active">Active</button>
+    <button class="filter-btn" data-status="Paused">Paused</button>
+    <button class="filter-btn" data-status="Work in Progress">WIP</button>
+  </div>
+
+  <div class="mod-list">
+    <!-- FS25 Mods -->
+    <div class="mod-row" data-game="FS25" data-status="Active">
+      <div class="mod-name">FS25_NPCFavor</div>
+      <div class="mod-game">FS25</div>
+      <div class="mod-desc">Deep, immersive NPC relationship &amp; interaction system.</div>
+      <div class="mod-statuses">
+        <span class="mod-status status-released">Released</span>
+        <span class="mod-dev-status status-active">Active</span>
+      </div>
+    </div>
+
+    <div class="mod-row" data-game="FS25" data-status="Active">
+      <div class="mod-name">FS25_SoilFertilizer</div>
+      <div class="mod-game">FS25</div>
+      <div class="mod-desc">Advanced soil chemistry and nutrient simulation.</div>
+      <div class="mod-statuses">
+        <span class="mod-status status-released">Released</span>
+        <span class="mod-dev-status status-active">Active</span>
+      </div>
+    </div>
+
+    <div class="mod-row" data-game="FS25" data-status="Active">
+      <div class="mod-name">FS25_SeasonalCropStress</div>
+      <div class="mod-game">FS25</div>
+      <div class="mod-desc">Dynamic seasonal crop stress &amp; irrigation system.</div>
+      <div class="mod-statuses">
+        <span class="mod-status status-beta">Work in Progress</span>
+        <span class="mod-dev-status status-active">Active</span>
+      </div>
+    </div>
+
+    <div class="mod-row" data-game="FS25" data-status="Active">
+      <div class="mod-name">FS25_WorkerCosts</div>
+      <div class="mod-game">FS25</div>
+      <div class="mod-desc">Skill-based worker wage system with economic impact.</div>
+      <div class="mod-statuses">
+        <span class="mod-status status-released">Released</span>
+        <span class="mod-dev-status status-active">Active</span>
+      </div>
+    </div>
+
+    <div class="mod-row" data-game="FS25" data-status="Active">
+      <div class="mod-name">FS25_IncomeMod</div>
+      <div class="mod-game">FS25</div>
+      <div class="mod-desc">Configurable economy rebalancing system.</div>
+      <div class="mod-statuses">
+        <span class="mod-status status-released">Released</span>
+        <span class="mod-dev-status status-active">Active</span>
+      </div>
+    </div>
+
+    <div class="mod-row" data-game="FS25" data-status="Paused">
+      <div class="mod-name">FS25_RandomWorldEvents</div>
+      <div class="mod-game">FS25</div>
+      <div class="mod-desc">80+ dynamic environmental &amp; world event systems.</div>
+      <div class="mod-statuses">
+        <span class="mod-status status-released">Released</span>
+        <span class="mod-dev-status status-paused">Paused</span>
+      </div>
+    </div>
+
+    <div class="mod-row" data-game="FS25" data-status="Paused">
+      <div class="mod-name">FS25_FarmTablet</div>
+      <div class="mod-game">FS25</div>
+      <div class="mod-desc">Interactive in-game tablet for farm management and stats.</div>
+      <div class="mod-statuses">
+        <span class="mod-status status-released">Released</span>
+        <span class="mod-dev-status status-paused">Paused</span>
+      </div>
+    </div>
+
+    <div class="mod-row" data-game="FS25" data-status="Active">
+      <div class="mod-name">FS25_EmployeeManager</div>
+      <div class="mod-game">FS25</div>
+      <div class="mod-desc">Deep employee management system: hiring, salaries, vehicle assignment.</div>
+      <div class="mod-statuses">
+        <span class="mod-status status-released">Released</span>
+        <span class="mod-dev-status status-active">Active</span>
+      </div>
+    </div>
+
+    <!-- FS22 Mods placeholders -->
+    <div class="mod-row" data-game="FS22" data-status="Active">
+      <div class="mod-name">FS22_ModName1</div>
+      <div class="mod-game">FS22</div>
+      <div class="mod-desc">Description goes here.</div>
+      <div class="mod-statuses">
+        <span class="mod-status status-released">Released</span>
+        <span class="mod-dev-status status-active">Active</span>
+      </div>
+    </div>
+    <div class="mod-row" data-game="FS22" data-status="Active">
+      <div class="mod-name">FS22_ModName2</div>
+      <div class="mod-game">FS22</div>
+      <div class="mod-desc">Description goes here.</div>
+      <div class="mod-statuses">
+        <span class="mod-status status-released">Released</span>
+        <span class="mod-dev-status status-active">Active</span>
+      </div>
+    </div>
+    <div class="mod-row" data-game="FS22" data-status="Active">
+      <div class="mod-name">FS22_ModName3</div>
+      <div class="mod-game">FS22</div>
+      <div class="mod-desc">Description goes here.</div>
+      <div class="mod-statuses">
+        <span class="mod-status status-released">Released</span>
+        <span class="mod-dev-status status-active">Active</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- JS for filtering -->
 <script>
-document.addEventListener('DOMContentLoaded', () => {
-  // Fade-in scroll animation
-  const faders = document.querySelectorAll('.fade-in');
-  const appearOptions = { threshold: 0.2, rootMargin: '0px 0px -50px 0px' };
-  const appearOnScroll = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if(entry.isIntersecting){
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, appearOptions);
-  faders.forEach(fader => appearOnScroll.observe(fader));
+const filterButtons = document.querySelectorAll('.filter-btn');
+const modRows = document.querySelectorAll('.mod-row');
 
-  // Mod filters
-  let currentGame = 'all';
-  let currentStatus = 'all';
-  const filterButtons = document.querySelectorAll('.filter-btn');
-  const modRows = document.querySelectorAll('.mod-row');
+let currentGame = 'all';
+let currentStatus = 'all';
 
-  filterButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      // Toggle active state
-      btn.classList.toggle('active');
-      const game = btn.dataset.game;
-      const status = btn.dataset.status;
-      if(game) currentGame = btn.classList.contains('active') ? game : 'all';
-      if(status) currentStatus = btn.classList.contains('active') ? status : 'all';
+filterButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const game = btn.dataset.game;
+    const status = btn.dataset.status;
 
-      modRows.forEach(row => {
-        const matchesGame = currentGame === 'all' || row.dataset.game === currentGame;
-        const matchesStatus = currentStatus === 'all' || row.dataset.status === currentStatus;
-        row.style.display = (matchesGame && matchesStatus) ? 'grid' : 'none';
-      });
+    if (game !== undefined) currentGame = game;
+    if (status !== undefined) currentStatus = status;
+
+    modRows.forEach(row => {
+      const matchesGame = (currentGame === 'all') || (row.dataset.game === currentGame);
+      const matchesStatus = (currentStatus === 'all') || (row.dataset.status === currentStatus);
+
+      row.style.display = (matchesGame && matchesStatus) ? 'grid' : 'none';
     });
   });
 });
 </script>
 
+<!-- BOTS -->
+<section class="section fade-in" id="bots">
+  <div class="section-head">
+    <span class="section-num">03</span>
+    <h2 class="section-title">The bots</h2>
+  </div>
+  <div class="mod-list">
+    <div class="mod-row">
+      <div class="mod-name">GitBot</div>
+      <div class="mod-game">Discord</div>
+      <div class="mod-desc">
+        Real-time GitHub event forwarding system with structured embeds, repository tracking, and filtering tools.
+      </div>
+      <span class="mod-status status-active">Active</span>
+    </div>
+
+    <div class="mod-row">
+      <div class="mod-name">ClaudeBot</div>
+      <div class="mod-game">Discord</div>
+      <div class="mod-desc">
+        Dual-personality AI assistant built for Discord, offering adaptive conversational handling and server integration.
+      </div>
+      <span class="mod-status status-active">Active</span>
+    </div>
+
+    <div class="mod-row">
+      <div class="mod-name">TicketBot</div>
+      <div class="mod-game">Discord</div>
+      <div class="mod-desc">
+        Advanced ticket management bot used by the FS25 Modding Community with logging, workflows, and moderation controls.
+      </div>
+      <span class="mod-status status-active">Active</span>
+    </div>
+
+    <div class="mod-row">
+      <div class="mod-name">ModBot</div>
+      <div class="mod-game">Discord</div>
+      <div class="mod-desc">
+        Comprehensive moderation system featuring automod, case tracking, structured logging, and admin utilities.
+      </div>
+      <span class="mod-status status-active">Active</span>
+    </div>
+  </div>
+</section>
+  
+<!-- STACK -->
+<section class="section fade-in" id="stack">
+  <div class="section-head">
+    <span class="section-num">04</span>
+    <h2 class="section-title">The stack</h2>
+  </div>
+  <div class="stack-grid">
+    <div class="stack-item">
+      <span class="stack-label">Primary Language</span>
+      <span class="stack-name">Lua</span>
+      <span class="stack-note">Game scripting, mod logic, performance-first</span>
+    </div>
+    <div class="stack-item">
+      <span class="stack-label">Config & Shaders</span>
+      <span class="stack-name">XML / GLSL</span>
+      <span class="stack-note">Mod structure, parameters, visual effects</span>
+    </div>
+    <div class="stack-item">
+      <span class="stack-label">Version Control</span>
+      <span class="stack-name">Git</span>
+      <span class="stack-note">Every release tracked, every change documented</span>
+    </div>
+    <div class="stack-item">
+      <span class="stack-label">Editor</span>
+      <span class="stack-name">VS Code</span>
+      <span class="stack-note">With Lua LSP, linting, and custom snippets</span>
+    </div>
+    <div class="stack-item">
+      <span class="stack-label">Platform</span>
+      <span class="stack-name">FS25 / FS22</span>
+      <span class="stack-note">GIANTS Engine, modDesc, multiplayer-aware</span>
+    </div>
+    <div class="stack-item">
+      <span class="stack-label">Engine</span>
+      <span class="stack-name">GIANTS Engine</span>
+      <span class="stack-note">Deep integration with native game systems</span>
+    </div>
+  </div>
+</section>
+
+<!-- PERSONAL -->
+<section class="section fade-in" id="personal">
+  <div class="section-head">
+    <span class="section-num">05</span>
+    <h2 class="section-title">Beyond the code</h2>
+  </div>
+  <div class="personal-grid">
+    <div class="personal-block">
+      <div class="personal-entry">
+        <div class="personal-entry-label">Family</div>
+        <p class="personal-entry-text">
+          Proud dad at 24, with a <strong>beautiful daughter</strong> and a wonderful girlfriend who keeps the whole operation running.
+          Fatherhood changed how I approach everything — patience, attention to detail, and building things that last.
+        </p>
+      </div>
+      <div class="personal-entry">
+        <div class="personal-entry-label">Learning</div>
+        <p class="personal-entry-text">
+          I'm a lifelong learner drawn to how <strong>systems work</strong> — not just in code, but in nature, economics, and human behaviour.
+          Farming Simulator is, in many ways, just systems all the way down.
+        </p>
+      </div>
+      <div class="personal-entry">
+        <div class="personal-entry-label">Approach</div>
+        <p class="personal-entry-text">
+          I build for <strong>passion</strong> first. Mods that I'd want to play. Systems that actually make the game better —
+          not just bigger. Quality over speed, every time.
+        </p>
+      </div>
+      <div class="personal-entry">
+        <div class="personal-entry-label">Community</div>
+        <p class="personal-entry-text">
+          Part of the KingMods community, sharing mods publicly and learning from every bit of player feedback.
+          <strong>The community makes the craft better.</strong>
+        </p>
+      </div>
+    </div>
+    <div>
+      <div class="big-quote">
+        <p class="big-quote-text">
+          "I build mods the same way I try to parent —
+          with patience, attention to detail,
+          and a long view."
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GITHUB LINK -->
+<div class="github-link-section fade-in">
+  <p class="github-link-text">
+    All projects, source code, and release history live on GitHub.
+    Come see what's being built.
+  </p>
+  <a href="https://github.com/TheCodingDad-TisonK" class="github-btn" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+    View GitHub Profile
+  </a>
+</div>
+
+</main>
+
+<footer>
+  <span class="footer-sig">Tison K. — TheCodingDad</span>
+  <span class="footer-motto">Immersion first · Performance always</span>
+</footer>
+
+<script>
+// Scroll-triggered fade-ins
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
 </body>
 </html>
