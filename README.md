@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&pause=1200&color=2E7D32&center=true&vCenter=true&width=700&lines=Farming+Simulator+Hobbiest+Developer;Lua+Gameplay+Modder;Realism+Focused+Mod+Architect;Performance-Optimized+Game+Systems" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&pause=1200&color=2E7D32&center=true&vCenter=true&width=700&lines=Farming+Simulator+Hobbyist+Developer;Lua+Gameplay+Modder;Realism+Focused+Mod+Architect;Performance-Optimized+Game+Systems" />
 </p>
 
 <br>
@@ -67,16 +67,25 @@ I build systems that:
 
 ---
 
+# 🤖 Bot & Automation Systems
+- Discord bots for community engagement  
+- Automated playtesting & feedback collection  
+- In-game helper bots for farm automation  
+
+---
+
 # 🚀 Highlighted Mods
 
-| System | Description |
-|--------|-------------|
-| **FS25_SoilFertilizer** | Advanced soil & nutrient simulation |
-| **FS25_WorkerCosts** | Dynamic skill-based wage system |
-| **FS25_NPCFavor** | Immersive NPC interaction mechanics |
-| **FS22_RandomWorldEvents** | 80+ dynamic world systems |
-| **FS22_FarmTablet** | In-game tablet management interface |
-| **FS22_IncomeMod** | Configurable economy balancing |
+| System | Description | Status |
+|--------|-------------|--------|
+| **FS25_SoilFertilizer** | Advanced soil & nutrient simulation | Active |
+| **FS25_WorkerCosts** | Dynamic skill-based wage system | Active |
+| **FS25_NPCFavor** | Immersive NPC interaction mechanics | Beta |
+| **FS25_SoilDegradation** | Seasonal organic matter decay, compaction & tillage history | In Development |
+| **FS25_BotFramework** | Modular bot system for farm automation & Discord integration | Planning |
+| **FS22_RandomWorldEvents** | 80+ dynamic world systems | Released |
+| **FS22_FarmTablet** | In-game tablet management interface | Released |
+| **FS22_IncomeMod** | Configurable economy balancing | Released |
 
 <p align="center">
   <a href="https://github.com/TheCodingDad-TisonK?tab=repositories">
@@ -122,9 +131,9 @@ I build systems that:
 
 # 👨‍👧‍👦 Beyond Development
 
-- Im a proud dad (24) with a lovely daughter and a beautyfull girlfriend <3.
-- Lifelong learner, I learn alot from our human species.
-- Builder of immersive farming systems, Not just basic scripting...
+- Proud dad (24) with a lovely daughter and a beautiful girlfriend.  
+- Lifelong learner — I learn a lot from our human species.  
+- Builder of immersive farming systems, not just basic scripting.  
 
 I build for passion, long-term quality, and immersive gameplay depth.
 
@@ -137,7 +146,3 @@ I build for passion, long-term quality, and immersive gameplay depth.
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2e7d32,100:111111&height=110&section=footer"/>
 </p>
-
-Look at my repo's and updates the README and INDEX to reflect everything correctly
-
-https://github.com/TheCodingDad-TisonK?tab=repositories
