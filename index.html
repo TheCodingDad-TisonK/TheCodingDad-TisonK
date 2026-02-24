@@ -898,88 +898,118 @@ footer {
 </section>
 
 <!-- MODS -->
+<!-- MODS -->
 <section class="section fade-in" id="mods">
   <div class="section-head">
     <span class="section-num">03</span>
     <h2 class="section-title">The mods</h2>
   </div>
   <div class="mod-list">
+    <!-- FS25 Mods -->
+    <div class="mod-row">
+      <div class="mod-name">FS25_NPCFavor</div>
+      <div class="mod-game">FS25</div>
+      <div class="mod-desc">Deep, immersive NPC relationship &amp; interaction system.</div>
+      <div class="mod-statuses">
+        <span class="mod-status status-released">Released</span>
+        <span class="mod-dev-status status-active">Active</span>
+      </div>
+    </div>
     <div class="mod-row">
       <div class="mod-name">FS25_SoilFertilizer</div>
       <div class="mod-game">FS25</div>
-      <div class="mod-desc">Advanced soil chemistry &amp; nutrient simulation. Tracks nitrogen, phosphorus, and organic matter across seasons with full save-game persistence.</div>
-      <span class="mod-status status-active">Active</span>
+      <div class="mod-desc">Advanced soil chemistry and nutrient simulation.</div>
+      <div class="mod-statuses">
+        <span class="mod-status status-released">Released</span>
+        <span class="mod-dev-status status-active">Active</span>
+      </div>
+    </div>
+    <div class="mod-row">
+      <div class="mod-name">FS25_SeasonalCropStress</div>
+      <div class="mod-game">FS25</div>
+      <div class="mod-desc">Dynamic seasonal crop stress &amp; irrigation system.</div>
+      <div class="mod-statuses">
+        <span class="mod-status status-beta">Work in Progress</span>
+        <span class="mod-dev-status status-active">Active</span>
+      </div>
     </div>
     <div class="mod-row">
       <div class="mod-name">FS25_WorkerCosts</div>
       <div class="mod-game">FS25</div>
-      <div class="mod-desc">Dynamic skill-based wage &amp; hiring system. Workers improve over time, demand higher wages, and affect your farm's bottom line realistically.</div>
-      <span class="mod-status status-active">Active</span>
-    </div>
-    <div class="mod-row">
-      <div class="mod-name">FS25_NPCFavor</div>
-      <div class="mod-game">FS25</div>
-      <div class="mod-desc">Immersive NPC relationship mechanics. Build trust and reputation with in-world characters to unlock new interactions and economic opportunities.</div>
-      <span class="mod-status status-beta">Beta</span>
-    </div>
-    <div class="mod-row">
-      <div class="mod-name">FS22_RandomWorldEvents</div>
-      <div class="mod-game">FS22</div>
-      <div class="mod-desc">80+ dynamic world events and environmental systems. From weather anomalies to market shocks — no two playthroughs are the same.</div>
-      <span class="mod-status status-released">Released</span>
-    </div>
-    <div class="mod-row">
-      <div class="mod-name">FS22_FarmTablet</div>
-      <div class="mod-game">FS22</div>
-      <div class="mod-desc">In-game tablet UI for farm management. Gives players a diegetic interface to track finances, workers, and field conditions without leaving the world.</div>
-      <span class="mod-status status-released">Released</span>
-    </div>
-    <div class="mod-row">
-      <div class="mod-name">FS22_IncomeMod</div>
-      <div class="mod-game">FS22</div>
-      <div class="mod-desc">Configurable economy &amp; income balancing. Adjust difficulty curves, price volatility, and income sources to match any playstyle.</div>
-      <span class="mod-status status-released">Released</span>
-    </div>
-  </div>
-
-  <!-- Code showcase -->
-  <div class="code-showcase fade-in" style="margin-top:56px">
-    <div class="code-header">
-      <div class="code-dots">
-        <div class="code-dot"></div>
-        <div class="code-dot"></div>
-        <div class="code-dot"></div>
+      <div class="mod-desc">Skill-based worker wage system with economic impact.</div>
+      <div class="mod-statuses">
+        <span class="mod-status status-released">Released</span>
+        <span class="mod-dev-status status-active">Active</span>
       </div>
-      <span class="code-filename">SoilDegradation.lua — currently building</span>
     </div>
-    <div class="code-body">
-<pre><span class="c-comment">-- FS25: Dynamic Soil Degradation System</span>
-<span class="c-comment">-- Tracks tillage history, compaction, and organic matter decay</span>
-<span class="c-comment">-- across seasons — fully save-game persistent</span>
+    <div class="mod-row">
+      <div class="mod-name">FS25_IncomeMod</div>
+      <div class="mod-game">FS25</div>
+      <div class="mod-desc">Configurable economy rebalancing system.</div>
+      <div class="mod-statuses">
+        <span class="mod-status status-released">Released</span>
+        <span class="mod-dev-status status-active">Active</span>
+      </div>
+    </div>
+    <div class="mod-row">
+      <div class="mod-name">FS25_RandomWorldEvents</div>
+      <div class="mod-game">FS25</div>
+      <div class="mod-desc">80+ dynamic environmental &amp; world event systems.</div>
+      <div class="mod-statuses">
+        <span class="mod-status status-released">Released</span>
+        <span class="mod-dev-status status-paused">Paused</span>
+      </div>
+    </div>
+    <div class="mod-row">
+      <div class="mod-name">FS25_FarmTablet</div>
+      <div class="mod-game">FS25</div>
+      <div class="mod-desc">Interactive in-game tablet for farm management and stats.</div>
+      <div class="mod-statuses">
+        <span class="mod-status status-released">Released</span>
+        <span class="mod-dev-status status-paused">Paused</span>
+      </div>
+    </div>
+    <div class="mod-row">
+      <div class="mod-name">FS25_EmployeeManager</div>
+      <div class="mod-game">FS25</div>
+      <div class="mod-desc">Deep employee management system: hiring, salaries, vehicle assignment.</div>
+      <div class="mod-statuses">
+        <span class="mod-status status-released">Released</span>
+        <span class="mod-dev-status status-active">Active</span>
+      </div>
+    </div>
 
-<span class="c-var">SoilDegradation</span> = <span class="c-var">SoilDegradation</span> <span class="c-keyword">or</span> {}
-<span class="c-var">SoilDegradation</span>.__index = <span class="c-var">SoilDegradation</span>
-
-<span class="c-keyword">function</span> <span class="c-var">SoilDegradation</span>:<span class="c-fn">onYearChange</span>(<span class="c-var">field</span>)
-  <span class="c-keyword">local</span> <span class="c-var">tillageHistory</span> = <span class="c-self">self</span>:<span class="c-fn">getTillageHistory</span>(<span class="c-var">field</span>)
-  <span class="c-keyword">local</span> <span class="c-var">decay</span>          = <span class="c-self">self</span>:<span class="c-fn">calculateOrganicDecay</span>(<span class="c-var">field</span>, <span class="c-var">tillageHistory</span>)
-  <span class="c-keyword">local</span> <span class="c-var">compaction</span>     = <span class="c-self">self</span>:<span class="c-fn">accumulateCompaction</span>(<span class="c-var">field</span>)
-  <span class="c-keyword">local</span> <span class="c-var">season</span>         = <span class="c-var">g_seasons</span> <span class="c-keyword">and</span> <span class="c-var">g_seasons</span>:<span class="c-fn">getCurrentSeason</span>() <span class="c-keyword">or</span> <span class="c-num">1</span>
-
-  <span class="c-self">self</span>:<span class="c-fn">applySeasonalEffects</span>(<span class="c-var">field</span>, <span class="c-var">decay</span>, <span class="c-var">compaction</span>, <span class="c-var">season</span>)
-  <span class="c-self">self</span>:<span class="c-fn">persistFieldState</span>(<span class="c-var">field</span>)
-<span class="c-keyword">end</span>
-
-<span class="c-keyword">function</span> <span class="c-var">SoilDegradation</span>:<span class="c-fn">calculateOrganicDecay</span>(<span class="c-var">field</span>, <span class="c-var">history</span>)
-  <span class="c-keyword">local</span> <span class="c-var">baseDecay</span>    = <span class="c-var">field</span>.organicMatter * <span class="c-num">0.03</span>
-  <span class="c-keyword">local</span> <span class="c-var">tillFactor</span>  = <span class="c-var">history</span>.deepTillCount * <span class="c-num">0.012</span>
-  <span class="c-keyword">return</span> <span class="c-var">math</span>.<span class="c-fn">clamp</span>(<span class="c-var">baseDecay</span> + <span class="c-var">tillFactor</span>, <span class="c-num">0</span>, <span class="c-var">field</span>.organicMatter)
-<span class="c-keyword">end</span></pre>
+    <!-- FS22 Mods placeholders -->
+    <div class="mod-row">
+      <div class="mod-name">FS22_ModName1</div>
+      <div class="mod-game">FS22</div>
+      <div class="mod-desc">Description goes here.</div>
+      <div class="mod-statuses">
+        <span class="mod-status status-released">Released</span>
+        <span class="mod-dev-status status-active">Active</span>
+      </div>
+    </div>
+    <div class="mod-row">
+      <div class="mod-name">FS22_ModName2</div>
+      <div class="mod-game">FS22</div>
+      <div class="mod-desc">Description goes here.</div>
+      <div class="mod-statuses">
+        <span class="mod-status status-released">Released</span>
+        <span class="mod-dev-status status-active">Active</span>
+      </div>
+    </div>
+    <div class="mod-row">
+      <div class="mod-name">FS22_ModName3</div>
+      <div class="mod-game">FS22</div>
+      <div class="mod-desc">Description goes here.</div>
+      <div class="mod-statuses">
+        <span class="mod-status status-released">Released</span>
+        <span class="mod-dev-status status-active">Active</span>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- BOTS -->
 <!-- BOTS -->
 <section class="section fade-in" id="bots">
   <div class="section-head">
