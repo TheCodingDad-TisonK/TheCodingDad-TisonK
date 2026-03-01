@@ -154,7 +154,3 @@ I build for passion, long-term quality, and immersive gameplay depth.
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2e7d32,100:111111&height=110&section=footer"/>
 </p>
-
-Look at my repo's and updates the README and INDEX to reflect everything correctly
-
-https://github.com/TheCodingDad-TisonK?tab=repositories
