@@ -29,7 +29,7 @@
   <a href="https://www.kingmods.net/nl/profile/tisonk?tab=mods">
     <img src="https://img.shields.io/badge/KingMods-Published%20Mods-2e7d32?style=for-the-badge&logo=modrinth&logoColor=white" />
   </a>
-  <a href="https://discord.gg/sJyKJCJh">
+  <a href="https://discord.gg/8FcgxwJ3dM">
     <img src="https://img.shields.io/badge/Discord-Join%20Community-2e7d32?style=for-the-badge&logo=discord&logoColor=white" />
   </a>
 </p>
