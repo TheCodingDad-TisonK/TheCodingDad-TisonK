@@ -71,15 +71,18 @@ I build systems that:
 
 ## 🌟 Featured FS25 Mods
 
-| Mod                         | Overview                                                                                            | Status              | Development |
-| --------------------------- | --------------------------------------------------------------------------------------------------- | ------------------- | ----------- |
-| **FS25_NPCFavor**           | Deep, immersive NPC relationship & interaction system that adds meaningful progression and realism. | ✅ Released          | 🟢 Active   |
-| **FS25_SoilFertilizer**     | Advanced soil chemistry and nutrient simulation for realistic crop management.                      | ✅ Released          | 🟢 Active   |
-| **FS25_SeasonalCropStress** | Dynamic seasonal crop stress & irrigation management system affecting yield and growth.             | ✅ Released          | 🟢 Active   |
-| **FS25_WorkerCosts**        | Dynamic, skill-based worker wage system with scaling efficiency and economic impact.                | ✅ Released          | 🟢 Active   |
-| **FS25_IncomeMod**          | Fully configurable economy rebalancing system for realistic financial progression.                  | ✅ Released          | 🟢 Active   |
-| **FS25_RandomWorldEvents**  | 80+ dynamic environmental & world event systems for immersive gameplay variety.                     | ✅ Released          | ⏸ Paused    |
-| **FS25_FarmTablet**         | Fully interactive in-game tablet for farm management, stats, and utilities.                         | ✅ Released          | ⏸ Paused    |
+| Mod                           | Overview                                                                                            | Status              | Development |
+| ----------------------------- | --------------------------------------------------------------------------------------------------- | ------------------- | ----------- |
+| **FS25_NPCFavor**             | Deep, immersive NPC relationship & interaction system that adds meaningful progression and realism. | 🧪 Beta             | 🟢 Active   |
+| **FS25_SoilFertilizer**       | Advanced soil chemistry and nutrient simulation for realistic crop management.                      | ✅ Released          | 🟢 Active   |
+| **FS25_SeasonalCropStress**   | Dynamic seasonal crop stress & irrigation management system affecting yield and growth.             | ✅ Released          | 🟢 Active   |
+| **FS25_WorkerCosts**          | Dynamic, skill-based worker wage system with scaling efficiency and economic impact.                | ✅ Released          | 🟢 Active   |
+| **FS25_IncomeMod**            | Fully configurable economy rebalancing system for realistic financial progression.                  | ✅ Released          | 🟢 Active   |
+| **FS25_TaxMod**               | Realistic tax system on farm income and assets — because prosperity comes with paperwork.           | ✅ Released          | ⏸ Paused    |
+| **FS25_FarmTablet**           | Fully interactive in-game tablet for farm management, stats, and utilities.                         | ✅ Released          | 🟢 Active   |
+| **FS25_RandomWorldEvents**    | 43+ dynamic random events for immersive and unpredictable gameplay variety.                         | ✅ Released          | ⏸ Paused    |
+| **FS25_RealisticAnimalNames** | Persistent, realistic animal names with floating name tags for all animal types.                    | ✅ Released          | 🟢 Active   |
+| **FS25_WorkplaceTriggers**    | Turn any map location into a workplace — place a trigger, set a wage, earn income on the clock.     | ✅ Released          | 🟢 Active   |
 
 ---
 
