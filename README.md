@@ -78,10 +78,10 @@ I build systems that:
 | **FS25_SeasonalCropStress**   | Dynamic seasonal crop stress & irrigation management system affecting yield and growth.             | ✅ Released          | 🟢 Active   |
 | **FS25_WorkerCosts**          | Dynamic, skill-based worker wage system with scaling efficiency and economic impact.                | ✅ Released          | 🟢 Active   |
 | **FS25_IncomeMod**            | Fully configurable economy rebalancing system for realistic financial progression.                  | ✅ Released          | 🟢 Active   |
-| **FS25_TaxMod**               | Realistic tax system on farm income and assets — because prosperity comes with paperwork.           | ✅ Released          | ⏸ Paused    |
+| **FS25_TaxMod**               | Realistic tax system on farm income and assets — because prosperity comes with paperwork.           | ✅ Released          | 🟢 Active    |
 | **FS25_FarmTablet**           | Fully interactive in-game tablet for farm management, stats, and utilities.                         | ✅ Released          | 🟢 Active   |
-| **FS25_RandomWorldEvents**    | 43+ dynamic random events for immersive and unpredictable gameplay variety.                         | ✅ Released          | ⏸ Paused    |
-| **FS25_RealisticAnimalNames** | Persistent, realistic animal names with floating name tags for all animal types.                    | ✅ Released          | 🟢 Active   |
+| **FS25_RandomWorldEvents**    | 43+ dynamic random events for immersive and unpredictable gameplay variety.                         | ✅ Released          | 🟢 Active    |
+| **FS25_RealisticAnimalNames** | Persistent, realistic animal names with floating name tags for all animal types.                    | ✅ Released          | ⏸ Paused   |
 | **FS25_WorkplaceTriggers**    | Turn any map location into a workplace — place a trigger, set a wage, earn income on the clock.     | ✅ Released          | 🟢 Active   |
 
 ---
@@ -92,10 +92,10 @@ I build systems that:
 
 | Bot           | Overview                                                                            | Status     | Development |
 | ------------- | ----------------------------------------------------------------------------------- | ---------- | ----------- |
-| **GitBot**    | Real-time GitHub event forwarding with clean embeds, filters, and repo tracking.    | ✅ Released | 🟢 Active   |
-| **ClaudeBot** | Dual-personality AI assistant with advanced conversational handling.                | ✅ Released | 🟢 Active   |
-| **TicketBot** | Advanced ticket management system built for the FS25 Modding Community.             | ✅ Released | 🟢 Active   |
-| **ModBot**    | Comprehensive moderation bot with logging, automod, case tracking, and admin tools. | ✅ Released | 🟢 Active   |
+| **GitBot**    | Real-time GitHub event forwarding with clean embeds, filters, and repo tracking.    | ✅ Released | ⏸ Paused   |
+| **ClaudeBot** | Dual-personality AI assistant with advanced conversational handling.                | ✅ Released | ⏸ Paused   |
+| **TicketBot** | Advanced ticket management system built for the FS25 Modding Community.             | ✅ Released | ⏸ Paused   |
+| **ModBot**    | Comprehensive moderation bot with logging, automod, case tracking, and admin tools. | ✅ Released | ⏸ Paused   |
 
 
 <p align="center">
